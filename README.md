@@ -2,6 +2,5 @@
 
 ````
 $ npm i 
-$ npm run dev
-
+$ npm run watch
 ````
