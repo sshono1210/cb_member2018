@@ -14,10 +14,9 @@ body {
   font-family: YuGothic, serif;
   background-color: chocolate;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   color: #ffffff;
   position: relative;
-  font-weight: bold;
   &Company {
 
   }
@@ -28,11 +27,13 @@ body {
     &Title {
       letter-spacing: 6px;
       font-size: 47px;
+      font-weight: bold;
     }
     &Detail {
       height: 33px;
       font-size: 17px;
       margin-top:33px;
+      letter-spacing: 1px;
     }
   }
   &Scroll{
