@@ -1,4 +1,21 @@
-@import "reset";
-@import "common";
-@import "top";
-@import "member";
+//foundation
+@import "foundation/_reset";
+@import "foundation/_base";
+
+//layout
+@import "layout/_main";
+@import "layout/_footer";
+
+//object-component
+@import "object/component/_common";
+@import "object/component/_top";
+
+//object-project
+@import "object/project/_firstView";
+@import "object/project/_concept";
+@import "object/project/_idea";
+@import "object/project/_policy";
+@import "object/project/_member";
+@import "object/project/_contact";
+
+//object-utility
