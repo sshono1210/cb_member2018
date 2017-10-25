@@ -1,10 +1,85 @@
-body {
-  color: #333;
-}
-
-.container{
-  width: 1440px;
+.c-container{
+  max-width: 1110px;
   margin: auto;
   left: 0;
   right: 0;
+}
+
+.c-firstView_img{
+  position: relative;
+}
+
+.c-logo{
+  position: absolute;
+  top:0;
+}
+
+.c-firstView_heading{
+  position: absolute;
+  color: #ffffff;
+  top:0;
+  margin: 500px 0 0 0;
+  font-size: 47px;
+  font-family:YuGothic;
+}
+
+.c-firstView_text{
+  position: absolute;
+  color: #ffffff;
+  top:0;
+  margin: 570px 0 0 0;
+  font-size: 17px;
+  font-family:YuGothic;
+}
+
+.c-heading{
+  //background-image: url("/public/image/circle.png");
+  color: #393739;
+  margin: 150px 0 100px 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: YuMincho;
+}
+
+.c-conceptDescription {
+
+  &_img {
+    position: relative;
+    height: 608px;
+    width: 739px;
+    //background: linear-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 1)),url("/public/image/conceptImage.png");
+  }
+  &_text{
+    position: relative;
+    top:-608px;
+    left:680px;
+    font-size:15px;
+    height: 126px;
+    width: 412px;
+    font-family: YuGothic;
+  }
+}
+
+.c-text{
+  margin: 14px 10px 14px 0;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.c-conceptKeyword{
+  &_text{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    position: relative;
+    top:-160px;
+    left:230px;
+    color: #C3504F;
+    font-family: YuGothic;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    p{
+      margin:0 20px 0 20px;
+    }
+  }
 }
