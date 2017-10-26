@@ -1,85 +1,185 @@
 .c-container{
-  max-width: 1110px;
-  margin: auto;
-  left: 0;
-  right: 0;
+
 }
 
 .c-firstView_img{
-  position: relative;
+  background-image: url('/image/firstView.png');
+  width: 1440px;
+  height: 700px;
+  background-repeat: no-repeat;
 }
 
 .c-logo{
-  position: absolute;
-  top:0;
+  background-image: url('/image/logo.png');
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
 }
 
 .c-firstView_heading{
-  position: absolute;
-  color: #ffffff;
-  top:0;
-  margin: 500px 0 0 0;
-  font-size: 47px;
+  font-weight: bold;
+  //color: #ffffff;
   font-family:YuGothic;
 }
 
 .c-firstView_text{
-  position: absolute;
-  color: #ffffff;
-  top:0;
-  margin: 570px 0 0 0;
-  font-size: 17px;
+  //color: #ffffff;
   font-family:YuGothic;
 }
 
 .c-heading{
-  //background-image: url("/public/image/circle.png");
-  color: #393739;
-  margin: 150px 0 100px 0;
   text-align: center;
-  font-size: 50px;
+  background-image: url('/image/circle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  color: #393739;
   font-family: YuMincho;
+  width:auto;
+  height:120px;
 }
 
 .c-conceptDescription {
 
   &_img {
-    position: relative;
-    height: 608px;
-    width: 739px;
+    background-image: url('/image/conceptImage.png');
+    width:auto;
+    height:608px;
+    background-repeat: no-repeat;
     //background: linear-gradient(rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 1)),url("/public/image/conceptImage.png");
   }
   &_text{
-    position: relative;
-    top:-608px;
-    left:680px;
-    font-size:15px;
-    height: 126px;
-    width: 412px;
-    font-family: YuGothic;
+
   }
 }
 
 .c-text{
-  margin: 14px 10px 14px 0;
   font-weight: 500;
-  line-height: 30px;
-}
+  font-family: YuGothic;
+ }
 
 .c-conceptKeyword{
   &_text{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-    position: relative;
-    top:-160px;
-    left:230px;
     color: #C3504F;
+    font-weight: 500;
     font-family: YuGothic;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 24px;
     p{
-      margin:0 20px 0 20px;
+
+    }
+  }
+  &_img{
+    background-image: url('/image/conceptKeywordImage.png');
+    width:auto;
+    height:421px;
+    background-repeat: no-repeat;
+  }
+}
+
+.c-pointList{
+
+  &_point{
+    text-align: center;
+
+    &_title{
+      font-family: YuMincho;
+    }
+
+    &_img{
+      background-image: url('/image/pointImage.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width:auto;
+      height:200px;
+    }
+
+    &_heading{
+      font-weight: bold;
+      font-family: YuGothic;
+      background-color: #FAF7F7;
+    }
+
+    &_description{
+      background-color: #FAF7F7;
+      font-family: YuGothic;
     }
   }
 }
+
+.c-skillup{
+
+  &_List{
+    width:100%;
+    height: auto;
+    background-color: #FAF7F7;
+
+    &_img{
+      background-image: url('/image/skillupImage.png');
+      width:443px;
+      height: 350px;
+      background-repeat: no-repeat;
+    }
+
+    &_detail{
+      font-family: YuGothic;
+      &_heading{
+        font-weight: bold;
+      }
+
+      &_text{
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.c-memberLists{
+
+  .c-memberList{
+
+    .c-profile{
+      border-bottom: solid 2px red;
+
+      &_img{
+        background-image: url('/image/memberImage.png');
+        width:240px;
+        height: 240px;
+        background-repeat: no-repeat;
+      }
+
+      &_position{
+        font-weight: 500;
+        color: #393739;
+        font-family: YuGothic;
+      }
+
+      &_name{
+        letter-spacing: 1px;
+        color: #393739;
+        font-family: "Noto Sans CJK JP";
+      }
+
+      &_nameEn{
+        color: #CCC4CB;
+        font-family: YuMincho;
+      }
+    }
+  }
+}
+
+.c-contact_anchor{
+
+  &_text{
+    display: inline-block;
+    height: 120px;
+    width: 500px;
+    background-color: #C3504F;
+    font-family: YuGothic;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+
+}
+
