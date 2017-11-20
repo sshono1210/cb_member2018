@@ -1,0 +1,13 @@
+@import "../layout/layout";
+
+:root{
+  font-size: 10px;
+}
+
+body{
+  font-size: 1.2rem;
+  font-family: YuGothic, serif;
+  @include desktop(){
+    font-size: 1.5rem;
+  }
+}

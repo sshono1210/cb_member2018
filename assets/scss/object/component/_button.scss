@@ -1,0 +1,24 @@
+@mixin c-btn_small() {
+  display: block;
+  //max-width: 240px;
+  //height: 50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #C3504F;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin c-btn_block() {
+  @include c-btn_small;
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+}

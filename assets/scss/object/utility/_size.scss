@@ -1,0 +1,203 @@
+//.c-firstView_heading{
+//  font-size: 400%;
+//}
+//
+//.c-firstView_text{
+//  font-size: 100%;
+//}
+
+//.c-heading{
+//  font-size: 50px;
+//}
+//
+//.c-conceptDescription {
+//
+//  &_text{
+//    font-size:15px;
+//  }
+//}
+//
+//.c-conceptKeyword{
+//  &_text{
+//    font-size: 20px;
+//  }
+//}
+
+@media screen and (max-width: 600px) {
+  .c-container {
+    max-width: 310px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .c-logo {
+    background-size: 50%;
+  }
+
+//***
+  .c-firstView_heading{
+    top: 14%;
+    font-size: 180%;
+    color: #fff;
+  }
+
+  .c-firstView_text{
+    top: 20%;
+    font-size: 80%;
+    width: 310px;
+    color: #fff;
+  }
+
+  .c-heading{
+    width:300px;
+    height:80px;
+    background-size: 80px;
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  .c-conceptDescription {
+    &_img {
+      width:310px;
+      height:310px;
+      background-repeat: no-repeat;
+      background-size: 310px;
+    }
+  }
+
+  .c-conceptKeyword{
+    position: relative;
+    &_text{
+      display: inline-block;
+      p {
+        margin-right: 5px;
+      }
+    }
+    &_img{
+      position: absolute;
+      right: 0;
+      display: inline-block;
+      width:200px;
+      height:200px;
+      background-size: 200px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .c-pointList{
+
+    &_point{
+      width: 49%;
+      display: inline-block;
+      &_title{
+
+      }
+
+      &_img1{
+        height: 100px;
+        background-size: 100%;
+      }
+
+      &_img2{
+        height: 100px;
+        background-size: 100%;
+      }
+
+      &_img3{
+        height: 100px;
+        background-size: 100%;
+      }
+
+      &_form {
+        padding: 10px 0 10px 0;
+      }
+
+      &_heading{
+        font-size: 16px;
+      }
+
+      &_description{
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .c-skillup{
+
+    &_List{
+      width:100%;
+      height: auto;
+      background-color: #FAF7F7;
+
+      &_img{
+        background-image: url('/image/skillupImage.png');
+        width:443px;
+        height: 350px;
+        background-repeat: no-repeat;
+      }
+
+      &_detail{
+        font-family: YuGothic;
+        &_heading{
+          font-weight: bold;
+        }
+
+        &_text{
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .c-memberLists{
+
+    .c-memberList{
+
+      .c-profile{
+        border-bottom: solid 2px red;
+
+        &_img{
+          background-image: url('/image/memberImage.png');
+          width:240px;
+          height: 240px;
+          background-repeat: no-repeat;
+        }
+
+        &_position{
+          font-weight: 500;
+          color: #393739;
+          font-family: YuGothic;
+        }
+
+        &_name{
+          letter-spacing: 1px;
+          color: #393739;
+          font-family: "Noto Sans CJK JP";
+        }
+
+        &_nameEn{
+          color: #CCC4CB;
+          font-family: YuMincho;
+        }
+      }
+    }
+  }
+
+  .c-contact_anchor{
+
+    &_text{
+      display: inline-block;
+      height: 80px;
+      width: 100%;
+      background-color: #C3504F;
+      font-family: YuGothic;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
