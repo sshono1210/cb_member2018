@@ -58,6 +58,7 @@
         ]
       }
     },
+
     components: {
       PageHero,
       PageMind,
