@@ -2,7 +2,7 @@
   <div>
     <section class="p-concept">
       <div class="p-concept--inner">
-        <h1 class="p-concept--title">testtest働く、学ぶ、成長する</h1>
+        <h1 class="p-concept--title">働く、学ぶ、成長する</h1>
         <div class="p-concept--image">
         </div>
         <div class="p-concept--sentence">

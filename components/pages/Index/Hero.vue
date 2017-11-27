@@ -9,7 +9,9 @@
 
   </div>
 </template>
-
+<script>
+    import PageFooter from '~/components/Footer.vue'
+</script>
 <style lang="scss" scoped>
   @import "~assets/scss/object/component/_container.scss";
   /*@import "~assets/scss/object/component/_title.scss";*/
@@ -18,7 +20,7 @@
   .p-hero{
     padding-top:12rem;
     padding-bottom: 1.3rem;
-    background: url("/images/vision01.jpg");
+    background: url("/static/images/member_top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -27,5 +29,5 @@
       font-weight: bold;
     }
   }
-
+  @include inline_block;
 </style>
