@@ -34,10 +34,12 @@
   /*@import "~assets/scss/object/component/_button.scss";*/
   .p-member{
     @include c-container();
-    background: #FAF7F7;
+    /*background: #FAF7F7;*/
+    margin-bottom: 6%;
     &--title{
       @include c-title;
-      background: linear-gradient(#FFF 50%,#FAF7F7 50%);
+      /*background: linear-gradient(#FFF 50%,#FAF7F7 50%);*/
+
     }
     &--sentence{
       @include c-sentence;
@@ -50,6 +52,19 @@
       align-items: center;
       width: 33%;
       padding: .5rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .p-member{
+      &--list{
+      display: flex;
+      justify-content:space-between;
+    }
+      &--item{
+        align-items: center;
+        width: 25%;
+      }
     }
   }
 </style>

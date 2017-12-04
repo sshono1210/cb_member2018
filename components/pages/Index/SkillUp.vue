@@ -38,8 +38,12 @@
     &--title{
       @include c-title;
     }
+    &--inner{
+      margin-bottom: 7%;
+    }
     &--sentence{
       @include c-sentence;
+      margin-bottom: 2.5rem;
     }
     &--pointList{
     }
