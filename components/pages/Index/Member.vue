@@ -60,6 +60,7 @@
       &--list{
       display: flex;
       justify-content:space-between;
+      background: #faf7f7;
     }
       &--item{
         align-items: center;
