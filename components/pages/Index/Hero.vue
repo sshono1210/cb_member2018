@@ -22,7 +22,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    @include c-container();
+    &--inner{
+      @include c-container();
+    }
     &--title{
       font-weight: bold;
     }
