@@ -1,7 +1,7 @@
 @mixin c-title(){
   text-align: center;
-  padding: 2.5rem 0;
-  font-size: 2rem;
+  padding: 5vw 0;
+  font-size: 5vw;
   position: relative;
   z-index: 100;
   &::before{
