@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="26px" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="contact_pc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-311.000000, -562.000000)" font-family="FontAwesome" font-size="28" font-weight="normal">
+        <g id="sec_contact" transform="translate(260.000000, 316.000000)" fill="#FFFFFF">
+            <g id="sec_otherContact">
+                <g id="contact_block" transform="translate(0.000000, 140.000000)">
+                    <g id="sns-caht" transform="translate(27.000000, 40.000000)">
+                        <g id="btn_facebook" transform="translate(0.000000, 40.000000)">
+                            <text id="icn_facebook">
+                                <tspan x="23.5" y="50"></tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
