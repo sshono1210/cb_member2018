@@ -5,7 +5,11 @@
 }
 
 @mixin desktop(){
-  @media(min-width: 920px){
+  @media(min-width: 786px){
     @content
   }
+}
+
+#__layout {
+  background: #fff;
 }

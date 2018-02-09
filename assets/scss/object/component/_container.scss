@@ -1,17 +1,18 @@
+@import "../../layout/layout";
+
 @mixin c-container(){
   width: 100%;
-  max-width: 1140px;
+  max-width: 980px;
   margin: 0 auto;
-  &--inner{
-    @include c-containerInner;
+  padding: 0 20px;
+  @include desktop {
+    padding: 0;
   }
 }
+
 @mixin c-containerInner(){
-  width: 90%;
+  padding: 0 2.5rem;
+  width: 100%;
+  max-width: 980px;
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  @mixin c-containerInner(){
-    width: 100%;
-  }
 }

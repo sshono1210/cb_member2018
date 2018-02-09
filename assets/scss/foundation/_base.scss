@@ -4,10 +4,43 @@
   font-size: 10px;
 }
 
-body{
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
+html,body{
   font-size: 1.2rem;
-  font-family: YuGothic, serif;
+  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic",sans-serif;
+  background-color: #FAF7F7;
+  color: #393739;
   @include desktop(){
     font-size: 1.5rem;
   }
 }
+
+::selection {
+  background: rgba(231, 6, 0, 0.1);
+}
+

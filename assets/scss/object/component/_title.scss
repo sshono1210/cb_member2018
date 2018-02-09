@@ -1,44 +1,41 @@
-@mixin c-title(){
-  text-align: center;
-  padding: 5vw 0;
-  font-size: 5vw;
-  position: relative;
-  z-index: 100;
-  &::before{
-    content: "　";
-    border: 3px solid #F5F1F1;
-    width: 2em;
-    height: 2em;
-    line-height: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -1em;
-    margin-left: -1em;
-    border-radius: 50%;
-    z-index: -100;
+@import "../../layout/layout";
+
+@mixin c-title {
+  font-family: "Yu Mincho Medium", YuMincho, serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #393739;
+  &::first-letter {
+    font-size: 1.5em;
+    color: #C3504F;
   }
-}
-@mixin c-sentence(){
-  line-height: 2em;
-}
-@media screen and (min-width: 768px) {
-  @mixin c-title(){
-    text-align: center;
-    padding: 3.5rem 0;
-    font-size: 2.2rem;
-    position: relative;
-    z-index: 100;
-    &::before{
-      content: "　";
-      border: 3px solid #F5F1F1;
-      width: 4em;
-      height: 4em;
-      line-height: 1em;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-    }
+  @include desktop{
+    font-size: 5rem;
   }
 }
 
+@mixin c-caption {
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #C3504F;
+  line-height: 1.5;
+  @include desktop(){
+    font-size: 2.5rem;
+  }
+}
+
+@mixin c-subTitle {
+  margin-bottom: 1rem;
+  font-family: YuMincho, serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #393739;
+}
+
+@mixin c-sentence {
+  line-height: 2;
+  color: #393739;
+}

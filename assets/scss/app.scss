@@ -1,26 +1,4 @@
-@import "~bootstrap/scss/bootstrap.scss";
-//foundation
-@import "foundation/_base";
+@import 'reset-css/reset.css';
 
-//layout
-@import "layout/_mainExample";
-@import "layout/_footer";
-
-////object-component
-//@import "object/component/_common";
-//@import "object/component/_top";
-//
-////object-project
-//@import "object/project/_firstView";
-//@import "object/project/_concept";
-//@import "object/project/_idea";
-//@import "object/project/_policy";
-//@import "object/project/_member";
-//@import "object/project/_contact";
-//
-////object-utility
-//@import "object/utility/_margin";
-//@import "object/utility/_position";
-//@import "object/utility/_size";
-//@import "object/utility/_text";
-//@import "object/utility/_align";
+@import "./foundation/_base";
+@import "./layout/_layout";

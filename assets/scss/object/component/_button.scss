@@ -1,24 +1,71 @@
-@mixin c-btn_small() {
-  display: block;
-  //max-width: 240px;
-  //height: 50px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  border-radius: 6px;
-  background-color: #C3504F;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  &:hover {
-    text-decoration: none;
-  }
-}
+@import "../../layout/layout";
 
-@mixin c-btn_block() {
-  @include c-btn_small;
-  width: 100%;
-  margin: 0 auto;
-  padding: .5rem 0;
+@mixin c-contactButton($snsIcon) {
+  display: inline-block;
+  padding: 2rem 1rem;
+  width:100%;
+  text-align: center;
+  border-radius: 4px;
+  color: #FFF;
   font-size: 1.5rem;
+  font-weight: bold;
+  background:#C3504F;
+  text-decoration: none;
+  position:relative;
+  transition: all .5s;
+  @include desktop {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: normal;
+    width: 45%;
+    letter-spacing: 2px;
+  }
+  &:hover {
+    opacity: .8;
+    transition: all .5s;
+    &::before {
+      right: .2rem;
+      transition: all .5s;
+    }
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url("/images/icon_arrow-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    right: .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+    @include desktop {
+      width: 2rem;
+      height: 2rem;
+      right: 1rem;
+    }
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url("/images/icn_#{$snsIcon}.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+    @include desktop {
+      width: 2.5rem;
+      height: 2.5rem;
+      right: 1rem;
+    }
+  }
 }
