@@ -1,5 +1,5 @@
 <template>
-  <div class="p-header" id="top">
+  <div class="p-header">
     <div class="p-header--triangle"></div>
     <div class="p-header--logoArea">
         <img class="p-header--logoImg" src="/images/logo.svg" alt="">
