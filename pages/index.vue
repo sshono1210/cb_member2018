@@ -60,6 +60,7 @@
         ]
       }
     },
+
     components: {
       PageHero,
       PageMind,
@@ -88,6 +89,7 @@
       window.removeEventListener('online', this._toggleNetworkStatus)
     }
   }
+
 </script>
 
 <style lang="sass">

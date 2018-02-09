@@ -1,6 +1,6 @@
 <template>
   <div class="p-card">
-    <div class="p-card--index"><span>Point {{item.index}}</span></div>
+    <div class="p-card--index"><span>Point</span></div>
     <div class="p-card--inner">
       <div class="p-card--image"></div>
       <div class="p-card--body">
@@ -16,18 +16,18 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      item: Object
-    },
-    data () {
-      return {}
-    },
-    computed: {
-    },
-    async mounted () {
-    }
-  }
+//  export default {
+//    props: {
+//      item: Object
+//    },
+//    data () {
+//      return {}
+//    },
+//    computed: {
+//    },
+//    async mounted () {
+//    }
+//  }
 </script>
 
 <style lang="scss" scoped>
@@ -49,12 +49,13 @@
       line-height: 4rem;
     }
     &--inner{
-      border-top: #C3504F 1px solid;
+      border-top: #C3504F 2px solid;
       background: #FAF7F7;
       z-index: 100;
+      overflow: hidden;
     }
     &--image{
-      height:10rem;
+      height:17rem;
       background: url("/images/vision01.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -70,4 +71,16 @@
       font-size: .8em;
     }
   }
+  @media screen and (min-width: 768px) {
+    .p-concept--image{
+      width: 100%;
+      display: inline-block;
+      justify-content:space-between;
+      &--sentence{
+     width: 40%;
+      }
+    }
+  }
+
+
 </style>

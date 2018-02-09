@@ -1,7 +1,9 @@
 <template>
   <div class="p-panel">
     <div class="p-panel--inner">
-      <div class="p-panel--image"></div>
+      <div class="p-panel--image">
+        <div class="p-panel--images01"></div>
+      </div>
       <div class="p-panel--body">
         <h3 class="p-panel--title">スクールや勉強会</h3>
         <div class="p-panel--sentence">slackやGitHubなどのITツールに・・・この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
@@ -30,16 +32,27 @@
   @import "~assets/scss/object/component/_title.scss";
   /*@import "~assets/scss/object/component/_button.scss";*/
 
-  .p-panel{
-    &--inner{
+  .p-panel {
+    &--inner {
       display: flex;
-      margin-bottom:2rem;
+      margin-bottom: 2rem;
+      height: 24rem;
+      border-right: #C3504F 2px solid;
     }
-    &--image{
+    &--inner:nth-child(2) {
+      display: flex;
+      margin-bottom: 2rem;
+      border-left: #C3504F 2px solid;
+      flex-direction:row-reverse;
+    }
+    &--image {
       width: 30%;
+    }
+    &--images01 {
       background: url("/images/vision01.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      height:100%;
     }
     &--body{
       width: 70%;

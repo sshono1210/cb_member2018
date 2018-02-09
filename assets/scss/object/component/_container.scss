@@ -2,15 +2,16 @@
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  //background-color: blue;
   &--inner{
     @include c-containerInner;
   }
 }
-
 @mixin c-containerInner(){
   width: 90%;
-  max-width: 940px;
   margin: 0 auto;
-  //background-color: red;
+}
+@media screen and (min-width: 768px) {
+  @mixin c-containerInner(){
+    width: 100%;
+  }
 }

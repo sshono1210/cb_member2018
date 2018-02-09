@@ -1,6 +1,6 @@
 <template>
   <div class="p-profile">
-    <div class="p-profile--image" style="background-image: url('/images/member_01.png')"></div>
+    <div class="p-profile--image"></div>
     <div class="p-profile--company">株式会社 chatbox</div>
     <div class="p-profile--title">代表取締役</div>
     <div class="p-profile--name">後藤 知宏</div>
@@ -31,11 +31,12 @@
   .p-profile{
     &--image{
       margin: 0 auto;
-      height: 20vw;
-      width: 20vw;
+      height: 14vw;
+      width: 14vw;
+      background-size: contain;
       background-repeat: no-repeat;
-      background-size: cover;
       margin-bottom: .5rem;
+      background-image: url('/images/member_01.png');
     }
 
     &--company,
@@ -58,7 +59,13 @@
       color: #CCC4CB;
       border-bottom: #C3504F 2px solid;
     }
-
-
   }
+  @media screen and (min-width: 768px) {
+    .p-profile{
+      &--image{
+        /*background-size: auto;*/
+      }
+    }
+  }
+
 </style>

@@ -40,17 +40,38 @@
     &--title{
       @include c-title;
     }
+    &--inner{
+      overflow: hidden;
+    }
     &--sentence{
       @include c-sentence;
     }
     &--pointList{
       display: flex;
       flex-wrap: wrap;
+      justify-content:space-between;
     }
     &--point{
       align-items: center;
       width: 50%;
       padding: .5rem;
     }
+    &--point:nth-child(2) {
+      margin-top: 50%;
+    }
   }
+  @media screen and (min-width: 768px) {
+    .p-idea {
+      &--point {
+        align-items: center;
+        width: 30%;
+        padding: .5rem;
+        justify-content:         center;
+      }
+      &--point:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+  }
+
 </style>
