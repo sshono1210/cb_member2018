@@ -25,8 +25,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    position: relative;
-    @include c-container();
+    &--inner{
+      @include c-container();
+    }
     &--title{
       font-weight: bold;
     }

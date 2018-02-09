@@ -58,6 +58,8 @@
       width: 70%;
       padding: 2rem 3rem;
       background: #FAF7F7;
+      border-right: 4px solid #C3504F;
+      box-sizing:border-box;
     }
     &--title{
       font-size: 1em;

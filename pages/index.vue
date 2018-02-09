@@ -6,6 +6,7 @@
     <page-skillup :skills="skills"></page-skillup>
     <page-member :members="members"></page-member>
     <page-contact></page-contact>
+    <contact-nav></contact-nav>
   </section>
 </template>
 
@@ -16,6 +17,7 @@
   import PageMember from '~/components/pages/Index/Member.vue'
   import PageContact from '~/components/pages/Index/Contact.vue'
   import PageSkillup from '~/components/pages/Index/SkillUp.vue'
+  import ContactNav from '~/components/pages/Index/ContactNav.vue'
 
   export default {
     data () {
@@ -65,7 +67,8 @@
       PageConcept,
       PageMember,
       PageContact,
-      PageSkillup
+      PageSkillup,
+      ContactNav
     },
     mounted () {
       if (!window.navigator) {
