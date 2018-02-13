@@ -7,6 +7,7 @@
     <!--<page-member :members="members"></page-member>-->
     <!--<page-contact></page-contact>-->
     <!--<contact-nav></contact-nav>-->
+    <page-contact></page-contact>
   </section>
 </template>
 
@@ -17,7 +18,7 @@
 //  import PageMember from '~/components/pages/Index/Member.vue'
 //  import PageContact from '~/components/pages/Index/Contact.vue'
 //  import PageSkillup from '~/components/pages/Index/SkillUp.vue'
-//  import ContactNav from '~/components/pages/Index/ContactNav.vue'
+  import PageContact from '~/components/pages/Index/Contact.vue'
 
   export default {
     data () {
@@ -68,7 +69,7 @@
 //      PageMember,
 //      PageContact,
 //      PageSkillup,
-//      ContactNav
+      PageContact
     },
     mounted () {
       if (!window.navigator) {

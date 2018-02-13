@@ -36,9 +36,10 @@
 <style lang="scss" scoped>
   @import "~assets/scss/object/component/_container.scss";
   @import "~assets/scss/layout/_layout.scss";
+  @import "~assets/scss/object/component/_title.scss";
 
   .p-footerArea{
-    margin-top: 10rem;
+    margin-top: 5em;
     border-top: 2px solid #C3504F;
     background-color: #FAF7F7;
     @include desktop() {
