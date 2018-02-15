@@ -56,16 +56,18 @@
     }
 
     &--pageTop {
+      @include c-container;
       position: relative;
     }
     &--pageTopImg {
+      display: inline-block;
       width: 20px;
       height: auto;
       position: absolute;
       bottom : 20px;
       right: 20px;
-      @include desktop() {
-        right: 150px;
+      @include desktop {
+        right: 0;
       }
     }
     &--body{
