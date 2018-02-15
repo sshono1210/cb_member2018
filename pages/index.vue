@@ -1,9 +1,9 @@
 <template>
   <section>
     <page-hero></page-hero>
-    <!--<page-concept></page-concept>-->
+    <page-concept></page-concept>
     <!--<page-mind :minds="minds"></page-mind>-->
-    <!--<page-skillup :skills="skills"></page-skillup>-->
+    <page-skillup :skills="skills"></page-skillup>
     <page-member :members="members"></page-member>
     <page-contact></page-contact>
   </section>
@@ -11,9 +11,9 @@
 
 <script>
   import PageHero from '~/components/pages/Index/Hero.vue'
+  import PageConcept from '~/components/pages/Index/Concept.vue'
 //  import PageMind from '~/components/pages/Index/Mind.vue'
-//  import PageConcept from '~/components/pages/Index/Concept.vue'
-//  import PageSkillup from '~/components/pages/Index/SkillUp.vue'
+  import PageSkillup from '~/components/pages/Index/SkillUp.vue'
   import PageMember from '~/components/pages/Index/Member.vue'
   import PageContact from '~/components/pages/Index/Contact.vue'
 
@@ -61,12 +61,11 @@
 
     components: {
       PageHero,
-//      PageContact,
-//      PageSkillup,
+      PageConcept,
 //      PageMind,
-//      PageConcept,
-        PageMember,
-        PageContact
+      PageSkillup,
+      PageMember,
+      PageContact
     },
     mounted () {
       if (!window.navigator) {
