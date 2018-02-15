@@ -31,12 +31,15 @@
 }
 
 html,body{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic",sans-serif;
   background-color: #FAF7F7;
   color: #393739;
+  line-height: 1.4;
+  font-feature-settings : "palt";
   @include desktop(){
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 }
 
@@ -44,3 +47,18 @@ html,body{
   background: rgba(231, 6, 0, 0.1);
 }
 
+#layout {
+  background: #fff;
+}
+
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
