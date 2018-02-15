@@ -53,7 +53,7 @@
       background: linear-gradient(#fff 50%, #FAF7F7 50%);
     }
     &__headingTitle {
-      @include c-title;
+      @include c-titleCenter;
     }
     &__lists {
       display: flex;
