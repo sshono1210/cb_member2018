@@ -4,9 +4,7 @@
     <!--<page-concept></page-concept>-->
     <!--<page-mind :minds="minds"></page-mind>-->
     <!--<page-skillup :skills="skills"></page-skillup>-->
-    <!--<page-member :members="members"></page-member>-->
-    <!--<page-contact></page-contact>-->
-    <!--<contact-nav></contact-nav>-->
+    <page-member :members="members"></page-member>
     <page-contact></page-contact>
   </section>
 </template>
@@ -15,9 +13,8 @@
   import PageHero from '~/components/pages/Index/Hero.vue'
 //  import PageMind from '~/components/pages/Index/Mind.vue'
 //  import PageConcept from '~/components/pages/Index/Concept.vue'
-//  import PageMember from '~/components/pages/Index/Member.vue'
-//  import PageContact from '~/components/pages/Index/Contact.vue'
 //  import PageSkillup from '~/components/pages/Index/SkillUp.vue'
+  import PageMember from '~/components/pages/Index/Member.vue'
   import PageContact from '~/components/pages/Index/Contact.vue'
 
   export default {
@@ -64,12 +61,12 @@
 
     components: {
       PageHero,
-//      PageMind,
-//      PageConcept,
-//      PageMember,
 //      PageContact,
 //      PageSkillup,
-      PageContact
+//      PageMind,
+//      PageConcept,
+        PageMember,
+        PageContact
     },
     mounted () {
       if (!window.navigator) {

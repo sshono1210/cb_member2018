@@ -1,14 +1,27 @@
 <template>
-  <div>
-    <section class="p-member">
-      <h2 class="p-member--title">Member</h2>
-      <div class="p-member---inner">
-        <div class="p-member--list">
-          <page-member class="p-member--item" v-for="member in members" :item="member" :key="member.index"></page-member>
+  <section class="p-member">
+    <div class="p-member__heading">
+      <div class="p-member__inner">
+        <h3 class="p-member__headingTitle">Member</h3>
+      </div>
+    </div>
+    <div class="p-member__inner">
+      <div class="p-member__lists">
+        <div class="p-member__listItem">
+          <p>メンバーの紹介</p>
+        </div>
+        <div class="p-member__listItem">
+          <p>メンバーの紹介</p>
+        </div>
+        <div class="p-member__listItem">
+          <p>メンバーの紹介</p>
+        </div>
+        <div class="p-member__listItem">
+          <p>メンバーの紹介</p>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -31,41 +44,25 @@
 <style lang="scss" scoped>
   @import "~assets/scss/object/component/_container.scss";
   @import "~assets/scss/object/component/_title.scss";
-  /*@import "~assets/scss/object/component/_button.scss";*/
   .p-member{
-    @include c-container();
-    /*background: #FAF7F7;*/
-    margin-bottom: 6%;
-    &--title{
+    background: #FAF7F7;
+    &__inner {
+      @include c-container;
+    }
+    &__heading {
+      background: linear-gradient(#fff 50%, #FAF7F7 50%);
+    }
+    &__headingTitle {
       @include c-title;
-      /*background: linear-gradient(#FFF 50%,#FAF7F7 50%);*/
-
     }
-    &--sentence{
-      @include c-sentence;
-    }
-    &--list{
+    &__lists {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
-    &--item{
-      align-items: center;
-      width: 33%;
-      padding: .5rem;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .p-member{
-      &--list{
-      display: flex;
-      justify-content:space-between;
-      background: #faf7f7;
-    }
-      &--item{
-        align-items: center;
-        width: 25%;
-      }
+    &__listItem{
+      width: 20%;
+     background: red;
     }
   }
 </style>
