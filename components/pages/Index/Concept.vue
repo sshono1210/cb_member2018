@@ -32,6 +32,7 @@
   @import "~assets/scss/object/component/_title.scss";
   .p-concept{
     margin-top: 80px;
+    margin-bottom: 60px;
     &__inner {
       @include c-container;
     }
