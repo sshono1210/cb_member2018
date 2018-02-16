@@ -41,7 +41,7 @@
       transform: translateX(-1px);
       animation: border_sp .5s ease .5s alternate both running;
       @include desktop() {
-        height: 20%;
+        height: 15%;
         animation: border_pc .5s ease .5s alternate both running;
         top: 93%;
       }
@@ -58,7 +58,7 @@
           height: 0;
         }
         100% {
-          height: 20%;
+          height: 15%;
         }
       }
     }
@@ -69,9 +69,6 @@
       color: #FFF;
       position: absolute;
       bottom: 15%;
-      @include desktop {
-
-      }
     }
     &__headingTitle {
       display: inline-block;
