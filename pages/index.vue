@@ -2,9 +2,9 @@
   <section>
     <page-hero></page-hero>
     <page-concept></page-concept>
-    <page-mind :minds="minds"></page-mind>
-    <page-skillup :skills="skills"></page-skillup>
-    <page-member :members="members"></page-member>
+    <page-mind></page-mind>
+    <page-skillup></page-skillup>
+    <page-member></page-member>
     <page-contact></page-contact>
   </section>
 </template>
@@ -20,49 +20,13 @@
   export default {
     data () {
       return {
-        minds: [
-          {
-            index: 1
-          },
-          {
-            index: 2
-          },
-          {
-            index: 3
-          }
-        ],
-        skills: [
-          {
-            index: 1
-          },
-          {
-            index: 2
-          },
-          {
-            index: 3
-          }
-        ],
-        members: [
-          {
-            index: 1
-          },
-          {
-            index: 2
-          },
-          {
-            index: 3
-          },
-          {
-            index: 4
-          }
-        ]
       }
     },
 
     components: {
       PageHero,
       PageConcept,
-//      PageMind,
+      PageMind,
       PageSkillup,
       PageMember,
       PageContact
