@@ -5,25 +5,21 @@
         <h3 class="p-mind__headingTitle">chatboxの理念</h3>
         <p class="p-mind__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
+      <ul class="p-mind__lists">
+        <li class="p-mind__listItem">
+          <div class="p-mind__listItemHeading">タイトル</div>
+          <div class="p-mind__listItemThumb"></div>
+          <div class="p-mind__listItemDescription">
+              <div class="p-mind__listItemDescriptionTitle">見出し</div>
+              <span class="p-mind__listItemDescriptionText">本文</span>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
 <script>
-  import PageCard from "./_Card.vue"
-  export default {
-    props: {
-      minds: Array
-    },
-    data () {
-      return {}
-    },
-    components: {
-      PageCard
-    },
-    async mounted () {
-    }
-  }
 </script>
 
 <style lang="scss" scoped>
@@ -40,6 +36,13 @@
     &__headingTitle {
       @include c-titleCenter;
     }
-  }
+    &__lists{
+      background: red;
+    }
+    &__listItem{
+      display: inline-block;
+      background: blue;
+    }
 
+  }
 </style>
