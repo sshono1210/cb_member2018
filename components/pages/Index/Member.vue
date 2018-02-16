@@ -8,16 +8,44 @@
     <div class="p-member__inner">
       <div class="p-member__lists">
         <div class="p-member__listItem">
-          <p>メンバーの紹介</p>
+          <div class="p-member__circle"></div>
+          <div class="p-member__position">
+            株式会社 chatbox / 代表取締役
+          </div>
+          <p class="p-member__name">後藤知宏</p>
+          <div class="p-member__kana">
+            Goto Tomohiro
+          </div>
         </div>
         <div class="p-member__listItem">
-          <p>メンバーの紹介</p>
+          <div class="p-member__circle"></div>
+          <div class="p-member__position">
+            株式会社 chatbox / エンジニア
+          </div>
+          <p class="p-member__name">庄埜詩織</p>
+          <div class="p-member__kana">
+            Shono Shiori
+          </div>
         </div>
         <div class="p-member__listItem">
-          <p>メンバーの紹介</p>
+          <div class="p-member__circle"></div>
+          <div class="p-member__position">
+            株式会社 chatbox / デザイナー
+          </div>
+          <p class="p-member__name">安井利紗</p>
+          <div class="p-member__kana">
+            Yasuri Risa
+          </div>
         </div>
         <div class="p-member__listItem">
-          <p>メンバーの紹介</p>
+          <div class="p-member__circle"></div>
+          <div class="p-member__position">
+            株式会社 chatbox / デザイナー
+          </div>
+          <p class="p-member__name">岡山海恵</p>
+          <div class="p-member__kana">
+            Okayama Kaie
+          </div>
         </div>
       </div>
     </div>
@@ -62,7 +90,36 @@
     }
     &__listItem{
       width: 20%;
-     background: red;
+      text-align: center;
+    }
+    &__circle{
+      background-image: url("/images/member_goto.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+    }
+    &__position{
+      color: #393739;
+      font-size: 1.2rem;
+      margin: 6% 0 4% 0;
+    }
+    &__name{
+      letter-spacing: 1px;
+      margin: 6% 0;
+      color: #393739;
+      font-size: 2rem;
+    }
+    &__kana{
+      width: 70%;
+      margin: 0 auto 30%;
+      padding-bottom: 10%;
+      color: #CCC4CB;
+      font-family: YuMincho;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #C3504F;
     }
   }
 </style>
