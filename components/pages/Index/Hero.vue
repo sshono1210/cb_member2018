@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <div class="p-hero">
-      <div class="p-hero__inner">
-        <div class="p-hero__heading">
-          <h2 class="p-hero__headingTitle">chatboxでの働き方</h2>
-          <p class="p-hero__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
-        </div>
+  <div class="p-hero">
+    <div class="p-hero__inner">
+      <div class="p-hero__heading">
+        <h2 class="p-hero__headingTitle">chatboxでの働き方</h2>
+        <p class="p-hero__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
     </div>
   </div>
@@ -35,17 +33,17 @@
       display: inline-block;
       content: "";
       width: 2px;
-      height: 70px;
+      height: 20%;
       background: #c3504f;
       position: absolute;
       left: 50%;
-      top: 270px;
+      top: 90%;
       transform: translateX(-1px);
       animation: border_sp .5s ease .5s alternate both running;
       @include desktop() {
-        height: 140px;
+        height: 20%;
         animation: border_pc .5s ease .5s alternate both running;
-        top: 740px;
+        top: 93%;
       }
       @keyframes border_sp {
         0% {
@@ -60,7 +58,7 @@
           height: 0;
         }
         100% {
-          height: 140px;
+          height: 20%;
         }
       }
     }
