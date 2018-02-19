@@ -8,44 +8,28 @@
     <div class="p-member__inner">
       <div class="p-member__lists">
         <div class="p-member__listItem">
-          <div class="p-member__circle"></div>
-          <div class="p-member__position">
-            株式会社 chatbox / 代表取締役
-          </div>
-          <p class="p-member__name">後藤知宏</p>
-          <div class="p-member__kana">
-            Goto Tomohiro
-          </div>
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">代表取締役</div>
+          <p class="p-member__listItemName">後藤 知宏</p>
+          <div class="p-member__listItemNameEn">Goto Tomohiro</div>
         </div>
         <div class="p-member__listItem">
-          <div class="p-member__circle"></div>
-          <div class="p-member__position">
-            株式会社 chatbox / エンジニア
-          </div>
-          <p class="p-member__name">庄埜詩織</p>
-          <div class="p-member__kana">
-            Shono Shiori
-          </div>
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">エンジニア</div>
+          <p class="p-member__listItemName">庄埜 詩織</p>
+          <div class="p-member__listItemNameEn">Shono Shiori</div>
         </div>
         <div class="p-member__listItem">
-          <div class="p-member__circle"></div>
-          <div class="p-member__position">
-            株式会社 chatbox / デザイナー
-          </div>
-          <p class="p-member__name">安井利紗</p>
-          <div class="p-member__kana">
-            Yasuri Risa
-          </div>
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">デザイナー</div>
+          <p class="p-member__listItemName">安井 利紗</p>
+          <div class="p-member__listItemNameEn">Yasui Risa</div>
         </div>
         <div class="p-member__listItem">
-          <div class="p-member__circle"></div>
-          <div class="p-member__position">
-            株式会社 chatbox / デザイナー
-          </div>
-          <p class="p-member__name">岡山海恵</p>
-          <div class="p-member__kana">
-            Okayama Kaie
-          </div>
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">デザイナー</div>
+          <p class="p-member__listItemName">岡山 海恵</p>
+          <div class="p-member__listItemNameEn">Okayama Kaie</div>
         </div>
       </div>
     </div>
@@ -92,34 +76,47 @@
       width: 20%;
       text-align: center;
     }
-    &__circle{
+    &__listItemThumb{
+      margin-bottom: 10px;
+      width: 100%;
       background-image: url("/images/member_goto.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      width: 20rem;
-      height: 20rem;
       border-radius: 50%;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
     }
-    &__position{
+    &__listItemPosition {
+      margin-bottom: 8px;
       color: #393739;
       font-size: 1.2rem;
-      margin: 6% 0 4% 0;
     }
-    &__name{
-      letter-spacing: 1px;
-      margin: 6% 0;
+    &__listItemName {
+      margin-bottom: 4px;
+      letter-spacing: 2px;
       color: #393739;
       font-size: 2rem;
     }
-    &__kana{
-      width: 70%;
+    &__listItemNameEn{
       margin: 0 auto 30%;
       padding-bottom: 10%;
       color: #CCC4CB;
-      font-family: YuMincho;
+      font-family: "Yu Mincho Medium", YuMincho, serif;
       font-size: 1.2rem;
-      border-bottom: 2px solid #C3504F;
+      letter-spacing: 1.5px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 60%;
+        border-bottom: 2px solid #C3504F;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+      }
     }
   }
 </style>
