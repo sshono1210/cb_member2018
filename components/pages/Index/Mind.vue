@@ -6,11 +6,25 @@
         <p class="p-mind__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
       <ul class="p-mind__lists">
-        <li class="p-mind__listItem">
+        <li class="p-mind__listItem num01">
           <div class="p-mind__listItemThumb"></div>
           <div class="p-mind__listItemDescription">
               <div class="p-mind__listItemDescriptionTitle">見出し</div>
               <span class="p-mind__listItemDescriptionText">本文</span>
+          </div>
+        </li>
+        <li class="p-mind__listItem num02">
+          <div class="p-mind__listItemThumb"></div>
+          <div class="p-mind__listItemDescription">
+            <div class="p-mind__listItemDescriptionTitle">見出し</div>
+            <span class="p-mind__listItemDescriptionText">本文</span>
+          </div>
+        </li>
+        <li class="p-mind__listItem num03">
+          <div class="p-mind__listItemThumb"></div>
+          <div class="p-mind__listItemDescription">
+            <div class="p-mind__listItemDescriptionTitle">見出し</div>
+            <span class="p-mind__listItemDescriptionText">本文</span>
           </div>
         </li>
       </ul>
@@ -42,7 +56,7 @@
     &__lists {
       display: flex;
       justify-content: space-between;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       @include desktop {
         flex-wrap: nowrap;
       }
@@ -66,14 +80,13 @@
       }
 
       &::before {
-        content: "point01";
         display: inline-block;
         border: 1px solid rgba(255,255,255,.5);
         border-radius: 100%;
         width: 50px;
         height: 50px;
         text-align: center;
-        line-height: 3;
+        line-height: 2.5;
         font-size: 1.4rem;
         color: #fff;
         background: #C3504F;
@@ -86,6 +99,7 @@
           border: none;
           width: 110px;
           height: 110px;
+          line-height: 3;
           font-size: 2rem;
           top: -55px;
           left: 50%;
@@ -95,16 +109,22 @@
       }
     }
     &__listItem.num01::before{
-      content: "01";
+      content: "Point1";
+    }
+    &__listItem.num02 {
+      top: 7rem;
+      @include desktop() {
+        top: 0;
+      }
     }
     &__listItem.num02::before{
-      content: "02";
+      content: "Point2";
     }
     &__listItem.num03::before{
-      content: "03";
+      content: "Point3";
     }
     &__listItem.num04::before{
-      content: "04";
+      content: "Point4";
     }
     &__listItemHeading {
       text-align: center;
@@ -120,7 +140,7 @@
     }
     &__listItemThumb {
       width: 100%;
-      background: #Fff;
+      background: #fff;
       background-image: url("/images/point_talk.jpg");
       background-repeat: no-repeat;
       background-size: cover;
