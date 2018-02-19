@@ -46,13 +46,19 @@
 
     }
     &__sec01 {
-      position: relative;
+      @include desktop() {
+        position: relative;
+      }
     }
     &__sec01Img {
       display: inline-block;
-      width: 55%;
+      width: 100%;
       background: url("/images/concept_photo01.jpg") center no-repeat;
-      background-size: cover;
+      background-size: contain;
+      @include desktop() {
+        width: 55%;
+        background-size: cover;
+      }
       &::before {
         content: "";
         display: block;
@@ -61,45 +67,61 @@
     }
     &__sec01Description {
       display: inline-block;
-      padding: 20px 0 25% 100px;
-      width: 60%;
+      width: 100%;
       box-sizing: border-box;
       line-height: 2;
-      position: absolute;
       right: 0;
       z-index: 10;
-      background: linear-gradient(left,hsla(0,0%,99%,0),hsla(0,0%,99%,.5) 10%,hsla(0,0%,100%,.8) 20%,hsla(0,0%,100%,.85) 25%,hsla(0,0%,100%,.9) 61%,#fff 80%)
+      @include desktop() {
+        padding: 20px 0 25% 100px;
+        width: 60%;
+        position: absolute;
+        background: linear-gradient(left,hsla(0,0%,99%,0),hsla(0,0%,99%,.5) 10%,hsla(0,0%,100%,.8) 20%,hsla(0,0%,100%,.85) 25%,hsla(0,0%,100%,.9) 61%,#fff 80%);
+      }
     }
     &__sec02 {
-      padding-bottom: 300px;
-      position: relative;
+      display: flex;
+      @include desktop() {
+        padding-bottom: 300px;
+        position: relative;
+      }
     }
     &__sec02Img {
       display: inline-block;
-      width: 50%;
+      width: 59%;
+      height: 59%;
+      margin: 30px 0;
       background: url("/images/concept_photo02.jpg") center no-repeat;
       background-size: cover;
-      position: absolute;
-      top: -90px;
-      right: 0;
-      z-index: 20;
       &::before {
         content: "";
         display: block;
         padding-top: 70%;
       }
+      @include desktop() {
+        position: absolute;
+        width: 50%;
+        top: -90px;
+        right: 0;
+        z-index: 20;
+        margin: 0;
+        height: auto;
+      }
     }
     &__sec02Keywords {
       display: inline-block;
-      width: 50%;
+      width: 40%;
       text-align: center;
-      position: absolute;
-      top: -60px;
-      left: 0;
-      background: linear-gradient(top,hsla(0,0%,99%,0),hsla(0,0%,99%,.5) 10%,hsla(0,0%,100%,.8) 20%,hsla(0,0%,100%,.85) 25%,hsla(0,0%,100%,.9) 61%,#fff 80%)
+      @include desktop() {
+        width: 50%;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        background: linear-gradient(top,hsla(0,0%,99%,0),hsla(0,0%,99%,.5) 10%,hsla(0,0%,100%,.8) 20%,hsla(0,0%,100%,.85) 25%,hsla(0,0%,100%,.9) 61%,#fff 80%);
+      }
     }
-    &__sec02Keyword{
-      margin: 30px 1em;
+    &__sec02Keyword {
+      margin: 30px 5px;
       display: inline-block;
       font-weight: bold;
       vertical-align: top;
@@ -109,6 +131,9 @@
       font-feature-settings: 'pkna';
       font-size: 1.8rem;
       letter-spacing: 2px;
+      @include desktop() {
+        margin: 30px 1em;
+      }
     }
 
   }
