@@ -31,6 +31,18 @@
           <p class="p-member__listItemName">岡山 海恵</p>
           <div class="p-member__listItemNameEn">Okayama Kaie</div>
         </div>
+        <div class="p-member__listItem">
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">アルバイト</div>
+          <p class="p-member__listItemName">飛田 一貴</p>
+          <div class="p-member__listItemNameEn">Tobita Kazuki</div>
+        </div>
+        <div class="p-member__listItem">
+          <div class="p-member__listItemThumb"></div>
+          <div class="p-member__listItemPosition">アルバイト</div>
+          <p class="p-member__listItemName">高橋 秀明</p>
+          <div class="p-member__listItemNameEn">Takahashi Hideaki</div>
+        </div>
       </div>
     </div>
   </section>
@@ -71,10 +83,17 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin: 0 20px;
+      @include desktop() {
+        margin: 0;
+      }
     }
     &__listItem{
-      width: 20%;
+      width: 40%;
       text-align: center;
+      @include desktop() {
+        width: 20%;
+      }
     }
     &__listItemThumb{
       margin-bottom: 10px;
