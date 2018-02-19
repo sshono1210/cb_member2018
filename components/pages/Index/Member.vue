@@ -83,13 +83,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 0 20px;
-      @include desktop() {
-        margin: 0;
-      }
     }
     &__listItem{
-      width: 40%;
+      width: 48%;
       text-align: center;
       @include desktop() {
         width: 20%;
