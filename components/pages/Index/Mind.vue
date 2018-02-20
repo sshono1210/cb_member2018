@@ -6,7 +6,7 @@
         <p class="p-mind__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
       <ul class="p-mind__lists">
-        <mind :index="n" v-for="n in 3"></mind>
+        <mind :index="index+1" v-for="(item, index) in mindLists" :item="item" :key="index"></mind>
       </ul>
     </div>
   </section>
@@ -15,8 +15,26 @@
 <script>
   import Mind from "./_Mind.vue"
   export default {
+    data () {
+      return {
+        mindLists: [
+          {
+            title: '見出し1',
+            text: '本文1'
+          },
+          {
+            title: '見出し2',
+            text: '本文2'
+          },
+          {
+            title: '見出し3',
+            text: '本文3'
+          }
+        ]
+      }
+    },
     components: {
-        Mind: Mind
+      Mind: Mind
     }
   }
 </script>
