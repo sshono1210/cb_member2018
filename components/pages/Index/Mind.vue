@@ -3,7 +3,7 @@
     <div class="p-mind__inner">
       <div class="p-mind__heading">
         <h3 class="p-mind__headingTitle">chatboxの理念</h3>
-        <p class="p-mind__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="p-mind__headingIntro">chatboxの理念は「それぞれがスキルアップするためのプラットフォームをつくる」こと。この理念に沿って、困った事を気軽に相談しあえる環境づくりや新しい技術を身につけるためのイベントの運営など、個々の成長を積極的にサポートしています。</p>
       </div>
       <ul class="p-mind__lists">
         <mind :index="index+1" v-for="(item, index) in mindLists" :item="item" :key="index"></mind>
@@ -19,16 +19,22 @@
       return {
         mindLists: [
           {
-            title: '見出し1',
-            text: '本文1'
+            title: 'コミュニケーション',
+            text: 'フラットな関係性\n' +
+            'Slack・ハングアウト等の導入\n' +
+            '無駄なMtgを行わない'
           },
           {
-            title: '見出し2',
-            text: '本文2'
+            title: '個性重視',
+            text: '個々の得意分野を活かす\n' +
+            'バックグラウンドの異なるスタッフ\n' +
+            '学生アルバイトも多数在籍'
           },
           {
-            title: '見出し3',
-            text: '本文3'
+            title: '学ぶ＆働く',
+            text: 'スクールへの無償参加\n' +
+            '勉強会・コミュニティの運営\n' +
+            '質問大歓迎の社風'
           }
         ]
       }
