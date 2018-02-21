@@ -3,10 +3,10 @@
     <div class="p-mind__inner">
       <div class="p-mind__heading">
         <h3 class="p-mind__headingTitle">chatboxの理念</h3>
-        <p class="p-mind__headingIntro">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="p-mind__headingIntro">chatboxの理念は「それぞれがスキルアップするためのプラットフォームをつくる」こと。この理念に沿って、困った事を気軽に相談しあえる環境づくりや新しい技術を身につけるためのイベントの運営など、個々の成長を積極的にサポートしています。</p>
       </div>
       <ul class="p-mind__lists">
-        <mind :index="n" v-for="n in 3"></mind>
+        <mind :index="index+1" v-for="(item, index) in mindLists" :item="item" :key="index"></mind>
       </ul>
     </div>
   </section>
@@ -15,8 +15,32 @@
 <script>
   import Mind from "./_Mind.vue"
   export default {
+    data () {
+      return {
+        mindLists: [
+          {
+            title: 'コミュニケーション',
+            text1: 'フラットな関係性',
+            text2: 'Slack・ハングアウト等の導入',
+            text3: '無駄なMtgを行わない'
+          },
+          {
+            title: '個性重視',
+            text1: '個々の得意分野を活かす',
+            text2: 'バックグラウンドの異なるスタッフ',
+            text3: '学生アルバイトも多数在籍'
+          },
+          {
+            title: '学ぶ＆働く',
+            text1: 'スクールへの無償参加',
+            text2: '勉強会・コミュニティの運営',
+            text3: '質問大歓迎の社風'
+          }
+        ]
+      }
+    },
     components: {
-        Mind: Mind
+      Mind: Mind
     }
   }
 </script>

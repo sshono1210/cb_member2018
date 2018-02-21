@@ -2,15 +2,17 @@
   <li :class="'p-mind__listItem num0' + index">
     <div class="p-mind__listItemThumb"></div>
     <div class="p-mind__listItemDescription">
-      <div class="p-mind__listItemDescriptionTitle">見出し</div>
-      <span class="p-mind__listItemDescriptionText">本文</span>
+      <div class="p-mind__listItemDescriptionTitle">{{item.title}}</div>
+      <p class="p-mind__listItemDescriptionText">{{item.text1}}</p>
+      <p class="p-mind__listItemDescriptionText">{{item.text2}}</p>
+      <p class="p-mind__listItemDescriptionText">{{item.text3}}</p>
     </div>
   </li>
 </template>
 
 <script>
   export default {
-    props: ['index']
+    props: ['index', 'item']
   }
 </script>
 
