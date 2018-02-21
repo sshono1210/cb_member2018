@@ -1,18 +1,15 @@
 <template>
-  <div class="p-profile">
-    <div class="p-profile--image"></div>
-    <div class="p-profile--company">株式会社 chatbox</div>
-    <div class="p-profile--title">代表取締役</div>
-    <div class="p-profile--name">後藤 知宏</div>
-    <div class="p-profile--nameEn">Goto<br>Tomohiro</div>
-  </div>
+    <div class="p-member__listItem">
+      <div class="p-member__listItemThumb"></div>
+      <div class="p-member__listItemPosition">{{item.position}}</div>
+      <p class="p-member__listItemName">{{item.name}}</p>
+      <div class="p-member__listItemNameEn">{{item.nameEn}}</div>
+    </div>
 </template>
 
 <script>
   export default {
-    props: {
-      item: Object
-    },
+    props: ['item', 'index'],
     data () {
       return {}
     },
@@ -28,42 +25,57 @@
   @import "~assets/scss/object/component/_title.scss";
   /*@import "~assets/scss/object/component/_button.scss";*/
 
-  .p-profile{
-    &--image{
-      margin: 0 auto;
-      height: 14vw;
-      width: 14vw;
-      background-size: contain;
+  .p-member{
+    &__listItem{
+      padding-left: 2%;
+      padding-right: 2%;
+      box-sizing: border-box;
+      width: 48%;
+      text-align: center;
+      @include desktop() {
+        width: 25%;
+      }
+    }
+    &__listItemThumb{
+      margin-bottom: 10px;
+      width: 100%;
+      background-image: url("/images/member_goto.jpg");
       background-repeat: no-repeat;
-      margin-bottom: .5rem;
-      background-image: url('/images/member_01.png');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
     }
-
-    &--company,
-    &--title{
-      font-size: .9rem;
-      text-align: center;
+    &__listItemPosition {
+      margin-bottom: 8px;
+      color: #393739;
+      font-size: 1.2rem;
     }
-    &--name{
-      font-size: 1.5rem;
-      text-align: center;
-      margin: .5rem 0;
+    &__listItemName {
+      margin-bottom: 4px;
+      letter-spacing: 2px;
+      color: #393739;
+      font-size: 2rem;
     }
-    &--nameEn{
-      width: 20vw;
-      margin: 0 auto;
-      font-size: 1rem;
-      line-height: 1em;
-      text-align: center;
-      padding-bottom:.5rem;
+    &__listItemNameEn{
+      margin: 0 auto 30%;
+      padding-bottom: 10%;
       color: #CCC4CB;
-      border-bottom: #C3504F 2px solid;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .p-profile{
-      &--image{
-        /*background-size: auto;*/
+      font-family: "Yu Mincho Medium", YuMincho, serif;
+      font-size: 1.2rem;
+      letter-spacing: 1.5px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 60%;
+        border-bottom: 2px solid #C3504F;
+        position: absolute;
+        left: 20%;
+        bottom: 0;
       }
     }
   }

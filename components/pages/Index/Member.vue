@@ -7,42 +7,7 @@
     </div>
     <div class="p-member__inner">
       <div class="p-member__lists">
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">代表取締役</div>
-          <p class="p-member__listItemName">後藤 知宏</p>
-          <div class="p-member__listItemNameEn">Goto Tomohiro</div>
-        </div>
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">エンジニア</div>
-          <p class="p-member__listItemName">庄埜 詩織</p>
-          <div class="p-member__listItemNameEn">Shono Shiori</div>
-        </div>
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">デザイナー</div>
-          <p class="p-member__listItemName">安井 利紗</p>
-          <div class="p-member__listItemNameEn">Yasui Risa</div>
-        </div>
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">デザイナー</div>
-          <p class="p-member__listItemName">岡山 海恵</p>
-          <div class="p-member__listItemNameEn">Okayama Kaie</div>
-        </div>
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">アルバイト</div>
-          <p class="p-member__listItemName">飛田 一貴</p>
-          <div class="p-member__listItemNameEn">Tobita Kazuki</div>
-        </div>
-        <div class="p-member__listItem">
-          <div class="p-member__listItemThumb"></div>
-          <div class="p-member__listItemPosition">アルバイト</div>
-          <p class="p-member__listItemName">高橋 秀明</p>
-          <div class="p-member__listItemNameEn">Takahashi Hideaki</div>
-        </div>
+        <page-member v-for="(item, index) in listItems" :item="item" :index="index"></page-member>
       </div>
     </div>
   </section>
@@ -55,7 +20,40 @@
       members: Array
     },
     data () {
-      return {}
+      return {
+        listItems: [
+          {
+            position: '代表取締役',
+            name: '後藤 知宏',
+            nameEn: 'Goto Tomohiro'
+          },
+          {
+            position: 'エンジニア',
+            name: '庄埜 詩織',
+            nameEn: 'Shono Shiori'
+          },
+          {
+            position: 'デザイナー',
+            name: '安井 利紗',
+            nameEn: 'Yasui Risa'
+          },
+          {
+            position: 'デザイナー',
+            name: '岡山 海恵',
+            nameEn: 'Okayama Kaie'
+          },
+          {
+            position: 'アルバイト',
+            name: '飛田 一貴',
+            nameEn: 'Tobita Kazuki'
+          },
+          {
+            position: 'アルバイト',
+            name: '高橋 秀明',
+            nameEn: 'Takahashi Hideaki'
+          }
+        ]
+      }
     },
     components: {
       PageMember
@@ -82,56 +80,6 @@
     &__lists {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    &__listItem{
-      width: 48%;
-      text-align: center;
-      @include desktop() {
-        width: 20%;
-      }
-    }
-    &__listItemThumb{
-      margin-bottom: 10px;
-      width: 100%;
-      background-image: url("/images/member_goto.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-      }
-    }
-    &__listItemPosition {
-      margin-bottom: 8px;
-      color: #393739;
-      font-size: 1.2rem;
-    }
-    &__listItemName {
-      margin-bottom: 4px;
-      letter-spacing: 2px;
-      color: #393739;
-      font-size: 2rem;
-    }
-    &__listItemNameEn{
-      margin: 0 auto 30%;
-      padding-bottom: 10%;
-      color: #CCC4CB;
-      font-family: "Yu Mincho Medium", YuMincho, serif;
-      font-size: 1.2rem;
-      letter-spacing: 1.5px;
-      position: relative;
-      &::after {
-        content: "";
-        width: 60%;
-        border-bottom: 2px solid #C3504F;
-        position: absolute;
-        left: 20%;
-        bottom: 0;
-      }
     }
   }
 </style>
