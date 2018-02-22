@@ -1,6 +1,6 @@
 <template>
     <div class="p-member__listItem">
-      <div class="p-member__listItemThumb"></div>
+      <div class="p-member__listItemThumb" :style="thumbStyle"></div>
       <div class="p-member__listItemPosition">{{item.position}}</div>
       <p class="p-member__listItemName">{{item.name}}</p>
       <div class="p-member__listItemNameEn">{{item.nameEn}}</div>
@@ -14,6 +14,9 @@
       return {}
     },
     computed: {
+      thumbStyle () {
+          return {backgroundImage: `url('${this.item.thumbnail}')`}
+      }
     },
     async mounted () {
     }
@@ -39,7 +42,6 @@
     &__listItemThumb{
       margin-bottom: 10px;
       width: 100%;
-      background-image: url("/images/member_goto.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;

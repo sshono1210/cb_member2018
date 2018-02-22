@@ -25,32 +25,38 @@
           {
             position: '代表取締役',
             name: '後藤 知宏',
-            nameEn: 'Goto Tomohiro'
+            nameEn: 'Goto Tomohiro',
+            thumbnail: '/images/member_goto.jpg'
           },
           {
             position: 'エンジニア',
             name: '庄埜 詩織',
-            nameEn: 'Shono Shiori'
+            nameEn: 'Shono Shiori',
+            thumbnail: '/images/member_shono.jpg'
           },
           {
             position: 'デザイナー',
             name: '安井 利紗',
-            nameEn: 'Yasui Risa'
+            nameEn: 'Yasui Risa',
+            thumbnail: '/images/member_yasui.jpg'
           },
           {
             position: 'デザイナー',
             name: '岡山 海恵',
-            nameEn: 'Okayama Kaie'
+            nameEn: 'Okayama Kaie',
+            thumbnail: '/images/member_okayama.jpg'
           },
           {
             position: 'アルバイト',
             name: '飛田 一貴',
-            nameEn: 'Tobita Kazuki'
+            nameEn: 'Tobita Kazuki',
+            thumbnail: '/images/member_tobita.jpg'
           },
           {
             position: 'アルバイト',
             name: '高橋 秀明',
-            nameEn: 'Takahashi Hideaki'
+            nameEn: 'Takahashi Hideaki',
+            thumbnail: '/images/member_takahashi.jpg'
           }
         ]
       }
