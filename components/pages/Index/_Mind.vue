@@ -1,6 +1,6 @@
 <template>
   <li :class="'p-mind__listItem num0' + index">
-    <div class="p-mind__listItemThumb"></div>
+    <div class="p-mind__listItemThumb" :style="thumbStyle"></div>
     <div class="p-mind__listItemDescription">
       <div class="p-mind__listItemDescriptionTitle">{{item.title}}</div>
       <p class="p-mind__listItemDescriptionText">{{item.text1}}</p>
@@ -12,7 +12,12 @@
 
 <script>
   export default {
-    props: ['index', 'item']
+    props: ['index', 'item'],
+    computed: {
+        thumbStyle () {
+            return {backgroundImage: `url('${this.item.thumbnail}')`}
+        }
+    },
   }
 </script>
 
@@ -33,8 +38,8 @@
       z-index: 100;
       @include desktop {
         margin-bottom: 0;
-        width: 32%;
-        max-width: 32%;
+        width: 28%;
+        max-width: 28%;
         z-index: 0;
       }
       &::before {
@@ -66,6 +71,11 @@
         }
       }
     }
+    &__listItem.num01 {
+      @include desktop() {
+        margin-right: 30px;
+      }
+    }
     &__listItem.num01::before{
       content: "Point1";
     }
@@ -73,6 +83,7 @@
       top: 7rem;
       @include desktop() {
         top: 0;
+        margin-right: 30px;
       }
     }
     &__listItem.num02::before{
@@ -98,7 +109,6 @@
     &__listItemThumb {
       width: 100%;
       background: #fff;
-      background-image: url("/images/point_talk.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -109,9 +119,9 @@
       }
     }
     &__listItemDescription {
-      padding: 1.7rem;
+      padding: 2rem 1.7rem 2rem 1.7rem;
       @include desktop {
-        padding: 2rem;
+        padding: 2rem 2rem 4rem 2rem;
       }
     }
     &__listItemDescriptionTitle {
@@ -126,6 +136,9 @@
     }
     &__listItemDescriptionText {
       line-height: 1.8;
+      @include desktop {
+        line-height: 3;
+      }
     }
   }
 </style>
