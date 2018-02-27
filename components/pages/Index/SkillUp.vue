@@ -48,6 +48,10 @@
   @import "~assets/scss/object/component/_container.scss";
   @import "~assets/scss/object/component/_title.scss";
   .p-skillUp{
+    margin-top: 60px;
+    @include desktop {
+      margin-top: 80px;
+    }
     &__inner {
       @include c-container;
     }
