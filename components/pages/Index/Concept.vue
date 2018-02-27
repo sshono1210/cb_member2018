@@ -33,8 +33,10 @@
   @import "~assets/scss/object/component/_container.scss";
   @import "~assets/scss/object/component/_title.scss";
   .p-concept{
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
+    @include desktop {
+      margin-bottom: 99px;
+    }
     &__inner {
       @include c-container;
     }

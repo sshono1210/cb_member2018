@@ -20,6 +20,10 @@
     background: url('/images/member_top.jpg') center no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 105px;
+    @include desktop {
+      margin-bottom: 169px;
+    }
     &::before {
       content: "";
       display: block;

@@ -74,7 +74,10 @@
   @import "~assets/scss/object/component/_title.scss";
   .p-member{
     background: #FAF7F7;
-    margin-top: 80px;
+    margin-bottom: 168px;
+    @include desktop {
+      margin-bottom: 150px;
+    }
     &__inner {
       @include c-container;
     }

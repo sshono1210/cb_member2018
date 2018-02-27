@@ -14,10 +14,9 @@
 
   .p-contact{
     @include c-container;
-    margin-bottom: 2rem;
-    margin-top: 2.0rem;
+    margin-bottom: 120px;
     @include desktop(){
-      margin-top: 150px;
+      margin-bottom: 196px;
       text-align: center;
     }
     &--inner  {
@@ -37,6 +36,7 @@
       margin-bottom: 2rem;
       @include desktop() {
         margin-bottom: 4rem;
+        text-align: left;
       }
     }
     &--button{
