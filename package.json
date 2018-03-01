@@ -7,10 +7,18 @@
   "dependencies": {
     "@nuxtjs/pwa": "latest",
     "bootstrap": "^4.0.0-beta.2",
+    "duplexer": "^0.1.1",
+    "json-loader": "^0.5.7",
+    "marked": "^0.3.17",
     "node-sass": "^4.6.1",
     "nuxt": "^1.0.0-rc11",
+    "path-dirname": "^1.0.2",
+    "prettier": "^1.11.1",
     "reset-css": "^2.2.1",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "to-regex-range": "^3.0.0",
+    "vue-smooth-scroll": "^1.0.13",
+    "yaml-loader": "^0.5.0"
   },
   "scripts": {
     "dev": "nuxt --hostname 0.0.0.0",
