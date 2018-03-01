@@ -53,6 +53,10 @@
   @import "~assets/scss/object/component/_title.scss";
 
   .p-mind{
+    margin-bottom: 118px;
+    @include desktop {
+      margin-bottom: 178px;
+    }
     &__inner {
       @include c-container;
     }
