@@ -16,71 +16,68 @@
 </template>
 
 <script>
-//  export default {
-//    props: {
-//      item: Object
-//    },
-//    data () {
-//      return {}
-//    },
-//    computed: {
-//    },
-//    async mounted () {
-//    }
-//  }
+  export default {
+    props: {
+      item: Object
+    },
+    data () {
+      return {}
+    },
+    computed: {},
+    async mounted () {
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/scss/object/component/_container.scss";
-  @import "~assets/scss/object/component/_title.scss";
-  /*@import "~assets/scss/object/component/_button.scss";*/
+@import "~assets/scss/object/component/_container.scss";
+@import "~assets/scss/object/component/_title.scss";
+/*@import "~assets/scss/object/component/_button.scss";*/
 
-  .p-card{
-    &--index{
-      text-align: center;
-      position: relative;
-      z-index: 0;
-      height:3.5rem;
-      width: 7rem;
-      margin: 0 auto;
-      border-radius:3.5rem 3.5rem 0 0;
-      background: #C3504F;
-      color: white;
-      line-height: 4rem;
-    }
-    &--inner{
-      border-top: #C3504F 2px solid;
-      background: #FAF7F7;
-      z-index: 100;
-      overflow: hidden;
-    }
-    &--image{
-      height:17rem;
-      background: url("/images/vision01.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    &--body{
-      padding: 1em;
-    }
-    &--title{
-      font-size: 1em;
-      font-weight: bold;
-    }
-    &--sentence{
-      font-size: .8em;
+.p-card {
+  &--index {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    height: 3.5rem;
+    width: 7rem;
+    margin: 0 auto;
+    border-radius: 3.5rem 3.5rem 0 0;
+    background: #c3504f;
+    color: white;
+    line-height: 4rem;
+  }
+  &--inner {
+    border-top: #c3504f 2px solid;
+    background: #faf7f7;
+    z-index: 100;
+    overflow: hidden;
+  }
+  &--image {
+    height: 17rem;
+    background: url("/images/vision01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &--body {
+    padding: 1em;
+  }
+  &--title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  &--sentence {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-concept--image {
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    &--sentence {
+      width: 40%;
     }
   }
-  @media screen and (min-width: 768px) {
-    .p-concept--image{
-      width: 100%;
-      display: inline-block;
-      justify-content:space-between;
-      &--sentence{
-     width: 40%;
-      }
-    }
-  }
-
-
+}
 </style>
