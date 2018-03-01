@@ -2,9 +2,9 @@
   <section>
     <page-hero></page-hero>
     <page-concept></page-concept>
-    <page-mind></page-mind>
-    <page-skillup></page-skillup>
-    <page-member></page-member>
+    <page-mind :mind-lists="mindLists"></page-mind>
+    <page-skillup :skill-items="skillItems"></page-skillup>
+    <page-member :list-items="listItems"></page-member>
     <page-contact></page-contact>
   </section>
 </template>
@@ -22,7 +22,17 @@
       return {
       }
     },
-
+    computed:{
+      listItems(){
+        return this.$store.state.listItems
+      },
+      mindLists(){
+        return this.$store.state.mindLists
+      },
+      skillItems(){
+        return this.$store.state.skillItems
+      }
+    },
     components: {
       PageHero,
       PageConcept,
@@ -36,19 +46,9 @@
         this.online = false
         return
       }
-      this.online = Boolean(window.navigator.onLine)
-      window.addEventListener('offline', this._toggleNetworkStatus)
-      window.addEventListener('online', this._toggleNetworkStatus)
     },
     methods: {
-      _toggleNetworkStatus ({ type }) {
-        this.online = type === 'online'
-      }
     },
-    destroyed () {
-      window.removeEventListener('offline', this._toggleNetworkStatus)
-      window.removeEventListener('online', this._toggleNetworkStatus)
-    }
   }
 
 </script>

@@ -1,0 +1,67 @@
+---
+listItems:
+- position: 代表取締役
+  name: 後藤 知宏
+  nameEn: Goto Tomohiro
+  thumbnail: "/images/member_goto.jpg"
+- position: エンジニア
+  name: 庄埜 詩織
+  nameEn: Shono Shiori
+  thumbnail: "/images/member_shono.jpg"
+- position: デザイナー
+  name: 安井 利紗
+  nameEn: Yasui Risa
+  thumbnail: "/images/member_yasui.jpg"
+- position: デザイナー
+  name: 岡山 海恵
+  nameEn: Okayama Kaie
+  thumbnail: "/images/member_okayama.jpg"
+- position: 学生スタッフ
+  name: 飛田 一貴
+  nameEn: Tobita Kazuki
+  thumbnail: "/images/member_tobita.jpg"
+- position: 学生スタッフ
+  name: 高橋 秀明
+  nameEn: Takahashi Hideaki
+  thumbnail: "/images/member_takahashi.jpg"
+mindLists:
+- title: コミュニケーション
+  text1:  オープン・フラットな社内環境
+  text2: チャットツールの積極的な活用
+  text3: 短時間で効率的なミーティング
+  thumbnail: "/images/point_talk.jpg"
+- title: 個性重視
+  text1: 個々の得意分野を活かした分業
+  text2: リモート・休暇取得が自由
+  text3: 学生アルバイトも多数在籍
+  thumbnail: "/images/point_personal.jpg"
+- title: 学ぶ＆働く
+  text1: コミュニティイベントの開催
+  text2: 技術セミナーの主催
+  text3: PC・各種ツールの支給
+  thumbnail: "/images/point_growth.jpg"
+skillItems:
+- title: コミュニケーション能力の育成
+  text: |
+    制作現場における円滑なコミュニケーションは、良い仕事を生み出すだけでなく、
+    携わるスタッフ全員の働きすさにも良い効果をもたらします。
+    chatboxでは、プロジェクトごとに異なる組織体制を組む柔軟なチーム制作を行っており、
+    タスクの依頼方法や報告の仕方などにも日々工夫を重ねています。
+    学生スタッフも含めたそれぞれのスタッフが、互いに円滑な相談・報告を行い、
+    より良い環境づくりに社内全体で取り組んでいます。
+  thumbnail: "/images/skill_talk.jpg"
+- title: 自己管理能力の向上
+  text: |
+    chatboxでは各々が無理せず、適切な休暇を取れるよう、
+    Backlogなどのプロジェクト管理ツールBacklogを使ったタスク管理が実施されています。
+    毎週の全体ミーティングでタスクを可視化し、全体報告を行うといった習慣を徹底することで、
+    繁忙時に応援を依頼したり、体調に合わせて休暇を取得する、といった事が可能になっています。
+    柔軟な出勤時間やリモートワークの利用などで、個々が最大限のパフォーマンスを発揮できる環境で、
+    それぞれがライフスタイルのニーズに合わせて仕事を設計することが出来るようになっています。
+  thumbnail: "/images/skill_workStyle.jpg"
+- title: スクール・勉強会の開催
+  text: |
+    chatbox 主催の Lec Café では「現場で使える最新技術」をテーマに毎月様々なセミナーを開催しています。
+    有償開催の高品質なセミナー講座に、アルバイトを含めた各スタッフは希望すれば無償で参加する事ができます。
+    また各種技術系コミュニティイベントの主催・参加も積極的に行われており、社外の様々なクリエイターとの交流の機会が用意されています。
+  thumbnail: "/images/skill_event.jpg"

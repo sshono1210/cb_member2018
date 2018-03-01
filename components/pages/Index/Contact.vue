@@ -2,7 +2,7 @@
   <div class="p-contact">
     <div class="p-contact--inner">
       <h1 class="p-contact--title">Contact</h1>
-      <p class="p-contact--sentence">求人・スクールのご用命は・・・Q この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。Q この文章はダミーです。文字の大きさ。Q この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      <p class="p-contact--sentence">Web制作のご相談、技術顧問に関するご相談、イベント・スクールに関するお問い合わせなど、 chatbox に関する相談・ご質問はお気軽に下記「お問い合わせフォーム」からお願いいたします。</p>
       <a class="p-contact--button" href="/contact">お問い合わせフォームへ </a>
     </div>
   </div>

@@ -15,32 +15,8 @@
 <script>
 import Mind from "./_Mind.vue";
 export default {
-  data() {
-    return {
-      mindLists: [
-        {
-          title: "コミュニケーション",
-          text1: "フラットな関係性",
-          text2: "Slack・ハングアウト等の導入",
-          text3: "無駄なMtgを行わない",
-          thumbnail: "/images/point_talk.jpg"
-        },
-        {
-          title: "個性重視",
-          text1: "個々の得意分野を活かす",
-          text2: "バックグラウンドの異なるスタッフ",
-          text3: "学生アルバイトも多数在籍",
-          thumbnail: "/images/point_personal.jpg"
-        },
-        {
-          title: "学ぶ＆働く",
-          text1: "スクールへの無償参加",
-          text2: "勉強会・コミュニティの運営",
-          text3: "質問大歓迎の社風",
-          thumbnail: "/images/point_growth.jpg"
-        }
-      ]
-    };
+  props: {
+    mindLists: Array
   },
   components: {
     Mind: Mind

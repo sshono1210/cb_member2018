@@ -3,7 +3,7 @@
     <div class="p-hero__inner">
       <div class="p-hero__heading">
         <h2 class="p-hero__headingTitle">chatboxでの働き方</h2>
-        <p class="p-hero__headingIntro">個人とチームの両輪を大切にする</p>
+        <p class="p-hero__headingIntro">個人の力でチームが活きる</p>
       </div>
     </div>
   </div>

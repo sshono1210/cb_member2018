@@ -7,7 +7,7 @@
     </div>
     <div class="p-member__inner">
       <div class="p-member__lists">
-        <page-member v-for="(item, index) in listItems" :item="item" :index="index"></page-member>
+        <page-member v-for="(item, index) in listItems" :item="item" :index="index" :key="index"></page-member>
       </div>
     </div>
   </section>
@@ -17,49 +17,10 @@
 import PageMember from "./_Member.vue";
 export default {
   props: {
-    members: Array
+    listItems: Array
   },
   data() {
-    return {
-      listItems: [
-        {
-          position: "代表取締役",
-          name: "後藤 知宏",
-          nameEn: "Goto Tomohiro",
-          thumbnail: "/images/member_goto.jpg"
-        },
-        {
-          position: "エンジニア",
-          name: "庄埜 詩織",
-          nameEn: "Shono Shiori",
-          thumbnail: "/images/member_shono.jpg"
-        },
-        {
-          position: "デザイナー",
-          name: "安井 利紗",
-          nameEn: "Yasui Risa",
-          thumbnail: "/images/member_yasui.jpg"
-        },
-        {
-          position: "デザイナー",
-          name: "岡山 海恵",
-          nameEn: "Okayama Kaie",
-          thumbnail: "/images/member_okayama.jpg"
-        },
-        {
-          position: "アルバイト",
-          name: "飛田 一貴",
-          nameEn: "Tobita Kazuki",
-          thumbnail: "/images/member_tobita.jpg"
-        },
-        {
-          position: "アルバイト",
-          name: "高橋 秀明",
-          nameEn: "Takahashi Hideaki",
-          thumbnail: "/images/member_takahashi.jpg"
-        }
-      ]
-    };
+    return {};
   },
   components: {
     PageMember
