@@ -1,6 +1,6 @@
 <template>
   <div class="p-header">
-    <div class="p-header--triangle"></div>
+    <a href="https://chatbox-inc.com/" target="_blank" class="p-header--triangle"></a>
     <div class="p-header--logoArea">
         <img class="p-header--logoImg" src="/images/logo.svg" alt="">
     </div>
@@ -13,13 +13,21 @@
 @import "~assets/scss/layout/_layout.scss";
 .p-header {
   &--triangle {
+    display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
     border: 30px solid transparent;
-    border-top: 30px solid #c3504f;
-    border-left: 30px solid #c3504f;
+    border-top: 30px solid #c2504f;
+    border-left: 30px solid #c2504f;
     z-index: 100000;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+      transition: all 0.3s;
+    }
+
     &::after {
       content: "";
       display: inline-block;
@@ -40,8 +48,8 @@
     }
     @include desktop() {
       border: 50px solid transparent;
-      border-top: 50px solid #c3504f;
-      border-left: 50px solid #c3504f;
+      border-top: 50px solid #c2504f;
+      border-left: 50px solid #c2504f;
     }
   }
   &--logoArea {
