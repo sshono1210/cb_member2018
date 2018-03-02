@@ -4,7 +4,7 @@
   font-family: "Yu Mincho Medium", YuMincho, serif;
   font-weight: normal;
   font-size: 2.5rem;
-  color: #393739;
+  color: #4d4b4d;
   &::first-letter {
     font-size: 1.5em;
     color: #C3504F;
@@ -14,18 +14,20 @@
   }
 }
 @mixin c-titleCenter {
-  margin-bottom: .7em;
+  margin-bottom: 30px;
   font-family: "Yu Mincho Medium", YuMincho, serif;
   font-weight: normal;
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: 4px;
-  color: #393739;
+  color: #4d4b4d;
+  line-height: 1;
   &::first-letter {
     font-size: 1.5em;
     color: #C3504F;
   }
   @include desktop{
+    margin-bottom: 1.2em;
     font-size: 5rem;
   }
 }
@@ -48,10 +50,10 @@
   font-family: YuMincho, serif;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #393739;
+  color: #4d4b4d;
 }
 
 @mixin c-sentence {
   line-height: 2;
-  color: #393739;
+  color: #4d4b4d;
 }

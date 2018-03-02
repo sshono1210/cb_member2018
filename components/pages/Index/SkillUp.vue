@@ -32,9 +32,9 @@ export default {
 @import "~assets/scss/object/component/_container.scss";
 @import "~assets/scss/object/component/_title.scss";
 .p-skillUp {
-  margin-bottom: 108px;
+  margin-bottom: 50px;
   @include desktop {
-    margin-bottom: 178px;
+    margin-bottom: 130px;
   }
   &__inner {
     @include c-container;

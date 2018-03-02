@@ -36,10 +36,14 @@ export default {
 
 .p-skillUp {
   &__ListItem {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     background: #faf7f7;
     border-right: 2px solid #c3504f;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__ListItem.is-odd {
     border-right: none;
@@ -47,18 +51,28 @@ export default {
     flex-direction: row-reverse;
   }
   &__ListItemTumb {
-    display: inline-block;
-    width: 40%;
+    display: block;
+    width: 100%;
+    height: 200px;
     background-image: url("/images/skill_talk.jpg");
     background-position: center;
     background-size: cover;
+    @include desktop {
+      display: inline-block;
+      width: 45%;
+      height: auto;
+    }
   }
   &__ListItemDetail {
-    display: inline-block;
-    width: 60%;
-    padding: 40px;
+    display: block;
+    width: 100%;
+    padding: 30px 40px;
     box-sizing: border-box;
     vertical-align: top;
+    @include desktop {
+      display: inline-block;
+      width: 60%;
+    }
   }
   &__ListItemDetailHeading {
     font-weight: bold;

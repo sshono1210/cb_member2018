@@ -29,9 +29,9 @@ export default {
 @import "~assets/scss/object/component/_title.scss";
 
 .p-mind {
-  margin-bottom: 118px;
+  margin-bottom: 0;
   @include desktop {
-    margin-bottom: 178px;
+    margin-bottom: 130px;
   }
   &__inner {
     @include c-container;
@@ -43,14 +43,19 @@ export default {
   }
   &__headingIntro {
     line-height: 2;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    @include desktop {
+      margin-bottom: 100px;
+    }
   }
   &__lists {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     @include desktop {
-      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 40px;
+      justify-content: space-between;
       flex-wrap: nowrap;
     }
   }

@@ -57,10 +57,10 @@ export default {
     font-size: 1.2rem;
   }
   &__listItemName {
-    margin-bottom: 4px;
     letter-spacing: 2px;
     color: #393739;
     font-size: 2rem;
+    line-height: 1.4;
   }
   &__listItemNameEn {
     margin: 0 auto 30%;

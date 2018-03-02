@@ -3,7 +3,7 @@
     <div class="p-contact--inner">
       <h1 class="p-contact--title">Contact</h1>
       <p class="p-contact--sentence">Web制作のご相談、技術顧問に関するご相談、イベント・スクールに関するお問い合わせなど、 chatbox に関する相談・ご質問はお気軽に下記「お問い合わせフォーム」からお願いいたします。</p>
-      <a class="p-contact--button" href="/contact">お問い合わせフォームへ </a>
+      <a class="p-contact--button" href="https://chatbox-inc.com/contact">お問い合わせフォームへ </a>
     </div>
   </div>
 </template>
@@ -54,6 +54,7 @@
     text-decoration: none;
     position: relative;
     transition: all 0.5s;
+    line-height: 1.2;
     @include desktop {
       max-width: 450px;
       font-size: 2rem;
