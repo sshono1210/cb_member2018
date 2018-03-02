@@ -11,7 +11,7 @@
           <a class="p-navi--link" href="https://chatbox-inc.com/">chatboxについて</a>
           <a class="p-navi--link" href="http://works.chatbox-inc.com/">サービス</a>
           <a class="p-navi--link" href="http://members.chatbox-inc.com/">メンバー</a>
-          <a class="p-navi--link" href="https://chatbox-inc.com/contact">お問い合わせ</a>
+          <a class="p-navi--link" href="https://chatbox-inc.com/contact/">お問い合わせ</a>
         </nav>
         <div class="p-footer--body">
           <div class="p-footer--icon"></div>
