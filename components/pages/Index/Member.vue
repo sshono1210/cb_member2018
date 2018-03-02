@@ -34,9 +34,9 @@ export default {
 @import "~assets/scss/object/component/_title.scss";
 .p-member {
   background: #faf7f7;
-  margin-bottom: 168px;
+  margin-bottom: 30px;
   @include desktop {
-    margin-bottom: 150px;
+    margin-bottom: 90px;
   }
   &__inner {
     @include c-container;

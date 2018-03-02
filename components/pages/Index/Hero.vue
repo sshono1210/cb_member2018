@@ -20,9 +20,9 @@
   background: url("/images/member_top.jpg") center no-repeat;
   background-size: cover;
   position: relative;
-  margin-bottom: 105px;
+  margin-bottom: 50px;
   @include desktop {
-    margin-bottom: 169px;
+    margin-bottom: 100px;
   }
   &::before {
     content: "";
@@ -35,7 +35,7 @@
       rgba(123, 5, 3, 0) 100%
     );
     @include desktop {
-      padding-top: 45%;
+      padding-top: 30%;
     }
   }
   &::after {
@@ -52,14 +52,14 @@
     @include desktop() {
       height: 15%;
       animation: border_pc 0.5s ease 0.5s alternate both running;
-      top: 93%;
+      top: 90%;
     }
     @keyframes border_sp {
       0% {
         height: 0;
       }
       100% {
-        height: 70px;
+        height: 50px;
       }
     }
     @keyframes border_pc {
@@ -67,7 +67,7 @@
         height: 0;
       }
       100% {
-        height: 15%;
+        height: 20%;
       }
     }
   }
@@ -77,17 +77,20 @@
   &__heading {
     color: #fff;
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
+    @include desktop {
+      bottom: 15%;
+    }
+
   }
   &__headingTitle {
     display: inline-block;
-    margin-bottom: 10px;
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 3px;
     line-height: 1.5;
     @include desktop {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-size: 4.5rem;
       letter-spacing: 6px;
     }

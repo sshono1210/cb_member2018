@@ -54,6 +54,7 @@
     text-decoration: none;
     position: relative;
     transition: all 0.5s;
+    line-height: 1.2;
     @include desktop {
       max-width: 450px;
       font-size: 2rem;

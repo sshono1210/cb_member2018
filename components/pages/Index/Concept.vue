@@ -45,7 +45,7 @@
 @import "~assets/scss/object/component/_container.scss";
 @import "~assets/scss/object/component/_title.scss";
 .p-concept {
-  margin-bottom: 130px;
+  margin-bottom: 40px;
   @include desktop {
     margin-bottom: 99px;
   }
@@ -67,27 +67,33 @@
   &__sec01Img {
     display: inline-block;
     width: 100%;
-    background: url("/images/concept_photo01.jpg") center no-repeat;
+    background: url("/images/concept_photo01.jpg") no-repeat;
+    background-position: top;
     background-size: contain;
     @include desktop() {
+      margin-bottom: 60px;
+      background-position: center;
       width: 55%;
       background-size: cover;
     }
     &::before {
       content: "";
       display: block;
-      padding-top: 100%;
+      padding-top: 83%;
+      @include desktop {
+        padding-top: 100%;
+      }
     }
   }
   &__sec01Description {
+    margin-bottom: 30px;
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
-    line-height: 2;
     right: 0;
     z-index: 10;
     @include desktop() {
-      padding: 20px 0 25% 100px;
+      padding: 20px 0 25% 130px;
       width: 60%;
       position: absolute;
       background: linear-gradient(
@@ -112,14 +118,9 @@
     display: inline-block;
     width: 59%;
     height: 59%;
-    margin: 30px 0;
+    margin-bottom: 30px;
     background: url("/images/concept_photo02.jpg") center no-repeat;
     background-size: cover;
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 70%;
-    }
     @include desktop() {
       position: absolute;
       width: 50%;
@@ -129,9 +130,15 @@
       margin: 0;
       height: auto;
     }
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 70%;
+    }
   }
   &__sec02Keywords {
     display: inline-block;
+    padding-right: 20px;
     width: 40%;
     text-align: center;
     @include desktop() {
@@ -151,7 +158,7 @@
     }
   }
   &__sec02Keyword {
-    margin: 30px 5px;
+    margin: 0 5px;
     display: inline-block;
     font-weight: bold;
     vertical-align: top;
@@ -159,10 +166,11 @@
     color: #c3504f;
     text-orientation: upright;
     font-feature-settings: "pkna";
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     @include desktop() {
       margin: 30px 1em;
+      font-size: 1.8rem;
     }
   }
 }
