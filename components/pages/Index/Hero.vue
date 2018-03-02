@@ -81,7 +81,6 @@
     @include desktop {
       bottom: 15%;
     }
-
   }
   &__headingTitle {
     display: inline-block;

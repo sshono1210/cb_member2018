@@ -44,7 +44,6 @@ export default {
     @include desktop {
       flex-wrap: nowrap;
     }
-
   }
   &__ListItem.is-odd {
     border-right: none;
