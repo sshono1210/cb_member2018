@@ -12,7 +12,7 @@
       <div class="p-interview__sec01">
         <div class="p-interview__sec01Img"></div>
         <div class="p-interview__sec01Keywords">
-          <span class="p-interview__sec01Keyword">築いていきたいのは</span>
+          <span class="p-interview__sec01Keyword">築いていきたいのは<br></span>
           <span class="p-interview__sec01Keyword">Webのこれからを語り会う会社</span>
         </div>
       </div>
@@ -47,7 +47,6 @@
 .p-interview {
   margin-bottom: 40px;
   @include desktop {
-    margin-bottom: 99px;
   }
   &__inner {
     @include c-container;
@@ -64,6 +63,20 @@
       position: relative;
     }
   }
+  &__sec01Keywords {
+    width: 25%;
+    display: inline-block;
+    height: 300px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 2px;
+    margin: 30px 1em;
+    font-size: 1.8rem;
+    font-weight: 700;
+    vertical-align: top;
+    color: #c3504f;
+
+  }
   &__sec01Img {
     display: inline-block;
     width: 100%;
@@ -75,6 +88,7 @@
       background-position: center;
       width: 55%;
       background-size: cover;
+      display: inline-block;
     }
     &::before {
       content: "";
@@ -110,8 +124,10 @@
   &__sec02 {
     display: flex;
     @include desktop() {
-      padding-bottom: 300px;
       position: relative;
+      top: -140px;
+      width: 48%;
+      margin-left:500px;
     }
   }
   &__sec02Img {
