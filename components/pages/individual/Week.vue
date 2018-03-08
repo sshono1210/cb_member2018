@@ -19,12 +19,10 @@
 <script>
 import Week from "./_Week.vue";
 export default {
-  props: {
-
-  },
+  props: {},
   components: {
-    Week,
-  },
+    Week
+  }
 };
 </script>
 

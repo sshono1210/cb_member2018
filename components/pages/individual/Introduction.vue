@@ -28,7 +28,7 @@ export default {
     thumbStyle() {
       return { backgroundImage: `url('http://placehold.it/350x350')` };
     }
-  },
+  }
 };
 </script>
 
@@ -44,7 +44,6 @@ export default {
     text-align: center;
   }
   &__inner {
-
   }
   &__listItem {
     padding-left: 2%;

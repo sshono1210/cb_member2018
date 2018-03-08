@@ -23,14 +23,12 @@ import IndividualChatbox from "~/components/pages/individual/Chatbox.vue";
 
 export default {
   data() {
-    return {
-
-    };
+    return {};
   },
   computed: {
     listItems() {
       return this.$store.state.listItems;
-    },
+    }
   },
   components: {
     IndividualFirstview,
@@ -40,7 +38,7 @@ export default {
     IndividualMessage,
     IndividualIntroduction,
     IndividualChatbox,
-    PageMember,
+    PageMember
   },
   mounted() {
     if (!window.navigator) {
@@ -48,9 +46,7 @@ export default {
       return;
     }
   },
-  methods: {
-
-  }
+  methods: {}
 };
 </script>
 

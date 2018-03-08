@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss" scoped>
@@ -34,10 +33,10 @@
     display: block;
     padding-top: 50%;
     background: linear-gradient(
-                    90deg,
-                    rgba(195, 80, 79, 0.49) 0%,
-                    rgba(182, 80, 78, 0.29) 67.45%,
-                    rgba(123, 5, 3, 0) 100%
+      90deg,
+      rgba(195, 80, 79, 0.49) 0%,
+      rgba(182, 80, 78, 0.29) 67.45%,
+      rgba(123, 5, 3, 0) 100%
     );
     @include desktop {
       padding-top: 30%;

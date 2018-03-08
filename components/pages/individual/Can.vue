@@ -21,7 +21,7 @@ import Can from "./_Can.vue";
 export default {
   components: {
     Can
-  },
+  }
 };
 </script>
 

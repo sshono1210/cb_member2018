@@ -23,13 +23,13 @@ export default {
         "is-odd": this.index % 2 !== 0
       };
     },
-      thumbStyle() {
-        return { backgroundImage: `url('http://placehold.it/886x700')` };
-      }
+    thumbStyle() {
+      return { backgroundImage: `url('http://placehold.it/886x700')` };
+    }
   },
-data() {
+  data() {
     return {};
-}
+  }
 };
 </script>
 
