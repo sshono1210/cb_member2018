@@ -59,11 +59,12 @@ export default {
     }
   }
   &__button {
-    display: inline-block;
+    display: flex;
+    margin: 0 auto;
     width: 100%;
+    height: 140px;
     max-width: 100%;
     box-sizing: border-box;
-    text-align: center;
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
@@ -73,8 +74,7 @@ export default {
     transition: all 0.5s;
     line-height: 1.2;
     @include desktop {
-      max-width: 500px;
-      height: 160px;
+      max-width: 600px;
       font-size: 2rem;
     }
     &:hover {
@@ -83,14 +83,24 @@ export default {
     }
   }
   &__buttonImg {
-    display: inline-block;
-    width: 243px;
-    height: 160px;
+      background-position: center;
+      display: inline-block;
+      width: 40%;
+      margin-right: auto;
+      height: 140px;
   }
   &__buttonText {
     display: inline-block;
+    width: 46%;
+    margin: 52px auto;
     color: #fff;
-    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+    @include desktop {
+        width: 38%;
+        margin: 44px auto;
+      }
   }
 }
 </style>

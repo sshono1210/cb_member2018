@@ -52,6 +52,7 @@
     @include c-container;
   }
   &__heading {
+    margin-bottom: 30px;
   }
   &__headingTitle {
     @include c-titleCenter;
@@ -64,7 +65,7 @@
     }
   }
   &__sec01Keywords {
-    width: 25%;
+    width: 30%;
     display: inline-block;
     height: 300px;
     writing-mode: vertical-rl;
@@ -75,19 +76,27 @@
     font-weight: 700;
     vertical-align: top;
     color: #c3504f;
+    position: relative;
+    left: 190px;
+    @include desktop() {
+      width: 60%;
+    }
 
   }
   &__sec01Img {
     display: inline-block;
-    width: 100%;
+    width: 60%;
     background: url("http://placehold.it/445x540") no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    left: 0;
     @include desktop() {
       margin-bottom: 60px;
       background-position: center;
       width: 55%;
-      background-size: cover;
+      height: auto;
       display: inline-block;
     }
     &::before {
@@ -123,6 +132,8 @@
   }
   &__sec02 {
     display: flex;
+    position: relative;
+    z-index: 1000;
     @include desktop() {
       position: relative;
       top: -140px;
@@ -150,6 +161,11 @@
       content: "";
       display: block;
       padding-top: 70%;
+    }
+  }
+  &__sec02Description{
+    @include desktop() {
+      margin-top: 230px;
     }
   }
   &__sec02Keywords {
