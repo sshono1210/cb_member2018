@@ -100,13 +100,13 @@
       letter-spacing: 6px;
     }
   }
-  &__headingCompany{
-      padding-top: 100px;
+  &__headingCompany {
+    padding-top: 100px;
     @include desktop {
       padding-top: 30px;
     }
   }
-  &__headingName{
+  &__headingName {
     font-size: 3.5rem;
     font-weight: bold;
   }

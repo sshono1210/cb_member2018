@@ -81,7 +81,6 @@
     @include desktop() {
       width: 60%;
     }
-
   }
   &__sec01Img {
     display: inline-block;
@@ -138,7 +137,7 @@
       position: relative;
       top: -140px;
       width: 48%;
-      margin-left:500px;
+      margin-left: 500px;
     }
   }
   &__sec02Img {
@@ -163,7 +162,7 @@
       padding-top: 70%;
     }
   }
-  &__sec02Description{
+  &__sec02Description {
     @include desktop() {
       margin-top: 230px;
     }

@@ -83,11 +83,11 @@ export default {
     }
   }
   &__buttonImg {
-      background-position: center;
-      display: inline-block;
-      width: 40%;
-      margin-right: auto;
-      height: 140px;
+    background-position: center;
+    display: inline-block;
+    width: 40%;
+    margin-right: auto;
+    height: 140px;
   }
   &__buttonText {
     display: inline-block;
@@ -98,9 +98,9 @@ export default {
     letter-spacing: 1px;
     text-align: left;
     @include desktop {
-        width: 38%;
-        margin: 44px auto;
-      }
+      width: 38%;
+      margin: 44px auto;
+    }
   }
 }
 </style>
