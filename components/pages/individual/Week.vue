@@ -52,12 +52,10 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     @include desktop {
       box-sizing: border-box;
-      justify-content: space-around;
       flex-wrap: wrap;
-      align-items: stretch;
+      justify-content: center;
     }
   }
 }
