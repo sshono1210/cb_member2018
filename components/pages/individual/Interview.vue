@@ -163,6 +163,17 @@
     }
   }
   &__sec02Description {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(hsla(0, 0%, 99%, 0)),
+      color-stop(10%, hsla(0, 0%, 99%, 0.5)),
+      color-stop(20%, hsla(0, 0%, 100%, 0.8)),
+      color-stop(25%, hsla(0, 0%, 100%, 0.85)),
+      color-stop(61%, hsla(0, 0%, 100%, 0.9)),
+      color-stop(80%, #fff)
+    );
     @include desktop() {
       margin-top: 230px;
     }
