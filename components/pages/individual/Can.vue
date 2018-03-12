@@ -34,7 +34,10 @@ export default {
     margin-bottom: 130px;
   }
   &__inner {
-    @include c-container;
+    padding: 0;
+    @include desktop {
+      @include c-container;
+    }
   }
   &__heading {
   }
@@ -43,6 +46,10 @@ export default {
   }
   &__headingIntro {
     margin-bottom: 40px;
+    padding: 0 20px;
+    @include desktop {
+      padding: 0 92px;
+    }
   }
   &__Lists {
   }

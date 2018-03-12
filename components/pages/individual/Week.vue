@@ -56,7 +56,7 @@ export default {
     flex-wrap: wrap;
     @include desktop {
       box-sizing: border-box;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
   }

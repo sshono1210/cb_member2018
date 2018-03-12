@@ -30,7 +30,7 @@ export default {
     display: block;
     border-top: 3px solid #c3504f;
     margin-bottom: 60px;
-    width: 100%;
+    width: 47%;
     background: #faf7f7;
     text-decoration: none;
     color: #393739;
