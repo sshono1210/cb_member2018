@@ -77,7 +77,7 @@
     vertical-align: top;
     color: #c3504f;
     position: relative;
-    left: 190px;
+    left: 180px;
     @include desktop() {
       width: 60%;
     }
@@ -85,7 +85,7 @@
   &__sec01Img {
     display: inline-block;
     width: 60%;
-    background: url("http://placehold.it/445x540") no-repeat;
+    background: url("/images/skill_talk.jpg") no-repeat;
     background-position: top;
     background-size: cover;
     height: 400px;

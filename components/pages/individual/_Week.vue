@@ -15,7 +15,7 @@ export default {
   props: ["index"],
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('http://placehold.it/480x480')` };
+      return { backgroundImage: `url('/images/skill_talk.jpg')` };
     }
   }
 };
