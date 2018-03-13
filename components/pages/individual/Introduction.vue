@@ -26,7 +26,7 @@
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('http://placehold.it/350x350')` };
+      return { backgroundImage: `url('/images/skill_talk.jpg')` };
     }
   }
 };

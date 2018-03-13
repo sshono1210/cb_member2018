@@ -29,7 +29,7 @@
   @include desktop {
   }
   &__bg {
-    background-image: url(http://placehold.it/350x350);
+    background-image: url(/images/skill_talk.jpg);
     text-align: right;
     margin-bottom: 85px;
     width: 100%;
