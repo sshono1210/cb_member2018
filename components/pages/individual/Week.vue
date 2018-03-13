@@ -38,8 +38,6 @@ export default {
   &__inner {
     @include c-container;
   }
-  &__heading {
-  }
   &__headingTitle {
     @include c-titleCenter;
   }
@@ -56,8 +54,8 @@ export default {
     flex-wrap: wrap;
     @include desktop {
       box-sizing: border-box;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

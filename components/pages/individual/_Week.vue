@@ -29,16 +29,16 @@ export default {
   &__listItem {
     display: block;
     border-top: 3px solid #c3504f;
-    margin-bottom: 60px;
-    width: 100%;
+    margin: 0 3px 60px 3px;
+    width: 46%;
     background: #faf7f7;
     text-decoration: none;
     color: #393739;
     position: relative;
     z-index: 100;
     @include desktop {
-      margin-bottom: 90px;
-      width: 24%;
+      width: 23%;
+      margin: 0 7px 90px 7px;
       z-index: 0;
     }
     &::before {
