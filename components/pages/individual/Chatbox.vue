@@ -21,7 +21,7 @@
 export default {
   computed: {
     thumbStyle() {
-      return { backgroundImage: `url('http://placehold.it/243x160')` };
+      return { backgroundImage: `url('/images/skill_talk.jpg')` };
     }
   }
 };
@@ -84,6 +84,7 @@ export default {
   }
   &__buttonImg {
     background-position: center;
+    background-size: cover;
     display: inline-block;
     width: 40%;
     margin-right: auto;
@@ -91,8 +92,8 @@ export default {
   }
   &__buttonText {
     display: inline-block;
-    width: 46%;
-    margin: 52px auto;
+    width: 54%;
+    margin: 48px auto;
     color: #fff;
     line-height: 1.5;
     letter-spacing: 1px;

@@ -21,7 +21,7 @@
 @import "~assets/scss/object/component/_title.scss";
 
 .p-firstView {
-  background: url("http://placehold.it/480x480") center no-repeat;
+  background: url("/images/skill_talk.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: 50px;

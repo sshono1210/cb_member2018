@@ -43,6 +43,9 @@ export default {
   }
   &__headingIntro {
     margin-bottom: 40px;
+    @include desktop {
+      padding: 0 92px;
+    }
   }
   &__Lists {
   }

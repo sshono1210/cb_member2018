@@ -77,7 +77,7 @@
     vertical-align: top;
     color: #c3504f;
     position: relative;
-    left: 190px;
+    left: 180px;
     @include desktop() {
       width: 60%;
     }
@@ -85,7 +85,7 @@
   &__sec01Img {
     display: inline-block;
     width: 60%;
-    background: url("http://placehold.it/445x540") no-repeat;
+    background: url("/images/skill_talk.jpg") no-repeat;
     background-position: top;
     background-size: cover;
     height: 400px;
@@ -163,6 +163,17 @@
     }
   }
   &__sec02Description {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(hsla(0, 0%, 99%, 0)),
+      color-stop(10%, hsla(0, 0%, 99%, 0.5)),
+      color-stop(20%, hsla(0, 0%, 100%, 0.8)),
+      color-stop(25%, hsla(0, 0%, 100%, 0.85)),
+      color-stop(61%, hsla(0, 0%, 100%, 0.9)),
+      color-stop(80%, #fff)
+    );
     @include desktop() {
       margin-top: 230px;
     }

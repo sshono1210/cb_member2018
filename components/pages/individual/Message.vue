@@ -29,12 +29,16 @@
   @include desktop {
   }
   &__bg {
-    background-image: url(http://placehold.it/350x350);
+    background-image: url(/images/skill_talk.jpg);
     text-align: right;
     margin-bottom: 85px;
-    background-size: 100%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
     @include desktop() {
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   &__inner {

@@ -24,7 +24,7 @@ export default {
       };
     },
     thumbStyle() {
-      return { backgroundImage: `url('http://placehold.it/886x700')` };
+      return { backgroundImage: `url('/images/skill_talk.jpg')` };
     }
   },
   data() {
